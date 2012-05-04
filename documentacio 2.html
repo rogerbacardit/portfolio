@@ -1,0 +1,3422 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!-- saved from url=(0054)file://localhost/Users/roger/code/pfc/output/book.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="generator" content="AsciiDoc 8.6.6">
+<title>Capsule Corp.</title>
+<style type="text/css">
+/* ---------------------------------------------------------------------------
+ *   Bare AsciiDoc styles
+ *   Ryan Tomayko <r@tomayko.com>
+ *--------------------------------------------------------------------------- */
+/* line 8, scribe.sass */
+body {
+  font-family: "helvetica", "Arial";
+  font-size: 100%;
+  /* 13px */
+  line-height: 1.5em;
+  /* 20px */
+  margin: 40px auto 50px auto;
+  max-width: 500px;
+  /* 790px */
+  color: #333333;
+}
+
+/* line 20, scribe.sass */
+em {
+  font-style: italic;
+}
+
+/* line 23, scribe.sass */
+strong {
+  font-weight: bold;
+  color: black;
+}
+
+/* line 27, scribe.sass */
+tt {
+  color: black;
+  display: inline-block;
+  background-color: #dddddd;
+  padding: 0px 5px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+/* line 36, scribe.sass */
+p, ul, ol {
+  margin: 15px 0;
+}
+
+/* line 39, scribe.sass */
+.imageblock {
+  text-align: center;
+  width: 500px;
+}
+
+/* line 43, scribe.sass */
+ul li p {
+  margin: 10px 0;
+}
+
+/* line 46, scribe.sass */
+dl {
+  margin: 10px 0;
+  margin-left: 40px;
+}
+
+/* line 50, scribe.sass */
+dt {
+  font-weight: normal;
+  color: black;
+}
+
+/* line 54, scribe.sass */
+h1, h2, h3, h4, h5 {
+  font-family: "helvetica", "Arial", sans-serif;
+  font-weight: bold;
+  color: black;
+}
+
+/* line 59, scribe.sass */
+h1 {
+  font-size: 40px;
+  line-height: 1.428;
+  margin: 20px 0;
+}
+
+/* line 64, scribe.sass */
+h2 {
+  font-size: 30px;
+  line-height: 1.364;
+  /* repeating, of course */
+  margin: 60px 0 20px 0;
+}
+
+/* line 70, scribe.sass */
+h3 {
+  font-size: 18px;
+  line-height: 1.1;
+  margin: 30px 0 10px 0;
+  font-weight: bold;
+}
+
+/* line 76, scribe.sass */
+h4 {
+  font-size: 18px;
+  line-height: 1.1;
+  margin: 20px 0 5px 0;
+  color: grey;
+}
+
+/* line 82, scribe.sass */
+h5 {
+  font-size: 13px;
+  font-style: italic;
+  line-height: 1.1;
+}
+
+/* line 87, scribe.sass */
+#header {
+  margin-bottom: 30px;
+}
+/* line 90, scribe.sass */
+#header h1 {
+  margin-bottom: 0;
+}
+
+/* line 93, scribe.sass */
+.title, .sidebar-title {
+  font-weight: normal;
+  color: black;
+  margin-bottom: 0;
+  font-family: "helvetica", "Arial";
+}
+
+/* line 99, scribe.sass */
+h2 {
+  page-break-before: always;
+  margin-top: 80px;
+}
+
+/* line 104, scribe.sass */
+.admonitionblock {
+  background-color: #fffcde;
+  padding: 10px;
+  margin: 30px 0px;
+  color: #555555;
+}
+/* line 107, scribe.sass */
+.admonitionblock .title {
+  font-weight: bold;
+}
+/* line 111, scribe.sass */
+.admonitionblock td.icon {
+  width: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #888888;
+}
+
+/* line 119, scribe.sass */
+.listingblock {
+  margin: 13px 0;
+  font-size: 95%;
+  line-height: 1.5em;
+}
+/* line 123, scribe.sass */
+.listingblock tt {
+  background-color: transparent;
+}
+/* line 125, scribe.sass */
+.listingblock .content {
+  border: 1px solid #e2e2e2;
+  border-left: 10px solid #e2e2e2;
+  background: #f1f1f1;
+  padding: 10px;
+}
+/* line 130, scribe.sass */
+.listingblock .content pre {
+  margin: 0;
+}
+
+/* line 133, scribe.sass */
+.literalblock .content {
+  margin-left: 40px;
+}
+
+/* line 136, scribe.sass */
+.verseblock .content {
+  white-space: pre;
+}
+
+/* line 139, scribe.sass */
+.sidebarblock .sidebar-content {
+  border: 1px solid silver;
+  background: #ffffee;
+  padding: 0 10px;
+  color: #222222;
+  font-size: smaller;
+  line-height: 1.5;
+}
+
+/* line 147, scribe.sass */
+.sidebar-title {
+  margin: 10px 0;
+  font-weight: bold;
+  color: #444422;
+}
+
+/* line 152, scribe.sass */
+.quoteblock .content {
+  font-style: italic;
+  color: #444444;
+  margin-left: 40px;
+}
+/* line 156, scribe.sass */
+.quoteblock .content .attribution {
+  font-style: normal;
+  text-align: right;
+  color: black;
+}
+
+/* line 161, scribe.sass */
+.exampleblock .content {
+  border-left: 2px solid silver;
+  padding-left: 8px;
+}
+/* line 162, scribe.sass */
+.exampleblock .content *:first-child {
+  margin-top: 0;
+}
+
+/* line 167, scribe.sass */
+#footer {
+  font-size: 11px;
+  margin-top: 40px;
+  border-top: 1px solid silver;
+  color: #555555;
+}
+
+/* line 173, scribe.sass */
+#author {
+  color: black;
+  display: block;
+  margin-top: 20px;
+}
+</style>
+<script type="text/javascript">
+/*<![CDATA[*/
+var asciidoc = {  // Namespace.
+
+/////////////////////////////////////////////////////////////////////
+// Table Of Contents generator
+/////////////////////////////////////////////////////////////////////
+
+/* Author: Mihai Bazon, September 2002
+ * http://students.infoiasi.ro/~mishoo
+ *
+ * Table Of Content generator
+ * Version: 0.4
+ *
+ * Feel free to use this script under the terms of the GNU General Public
+ * License, as long as you do not remove or alter this notice.
+ */
+
+ /* modified by Troy D. Hanson, September 2006. License: GPL */
+ /* modified by Stuart Rackham, 2006, 2009. License: GPL */
+
+// toclevels = 1..4.
+toc: function (toclevels) {
+
+  function getText(el) {
+    var text = "";
+    for (var i = el.firstChild; i != null; i = i.nextSibling) {
+      if (i.nodeType == 3 /* Node.TEXT_NODE */) // IE doesn't speak constants.
+        text += i.data;
+      else if (i.firstChild != null)
+        text += getText(i);
+    }
+    return text;
+  }
+
+  function TocEntry(el, text, toclevel) {
+    this.element = el;
+    this.text = text;
+    this.toclevel = toclevel;
+  }
+
+  function tocEntries(el, toclevels) {
+    var result = new Array;
+    var re = new RegExp('[hH]([2-'+(toclevels+1)+'])');
+    // Function that scans the DOM tree for header elements (the DOM2
+    // nodeIterator API would be a better technique but not supported by all
+    // browsers).
+    var iterate = function (el) {
+      for (var i = el.firstChild; i != null; i = i.nextSibling) {
+        if (i.nodeType == 1 /* Node.ELEMENT_NODE */) {
+          var mo = re.exec(i.tagName);
+          if (mo && (i.getAttribute("class") || i.getAttribute("className")) != "float") {
+            result[result.length] = new TocEntry(i, getText(i), mo[1]-1);
+          }
+          iterate(i);
+        }
+      }
+    }
+    iterate(el);
+    return result;
+  }
+
+  var toc = document.getElementById("toc");
+  if (!toc) {
+    return;
+  }
+
+  // Delete existing TOC entries in case we're reloading the TOC.
+  var tocEntriesToRemove = [];
+  var i;
+  for (i = 0; i < toc.childNodes.length; i++) {
+    var entry = toc.childNodes[i];
+    if (entry.nodeName == 'div'
+     && entry.getAttribute("class")
+     && entry.getAttribute("class").match(/^toclevel/))
+      tocEntriesToRemove.push(entry);
+  }
+  for (i = 0; i < tocEntriesToRemove.length; i++) {
+    toc.removeChild(tocEntriesToRemove[i]);
+  }
+
+  // Rebuild TOC entries.
+  var entries = tocEntries(document.getElementById("content"), toclevels);
+  for (var i = 0; i < entries.length; ++i) {
+    var entry = entries[i];
+    if (entry.element.id == "")
+      entry.element.id = "_toc_" + i;
+    var a = document.createElement("a");
+    a.href = "#" + entry.element.id;
+    a.appendChild(document.createTextNode(entry.text));
+    var div = document.createElement("div");
+    div.appendChild(a);
+    div.className = "toclevel" + entry.toclevel;
+    toc.appendChild(div);
+  }
+  if (entries.length == 0)
+    toc.parentNode.removeChild(toc);
+},
+
+
+/////////////////////////////////////////////////////////////////////
+// Footnotes generator
+/////////////////////////////////////////////////////////////////////
+
+/* Based on footnote generation code from:
+ * http://www.brandspankingnew.net/archive/2005/07/format_footnote.html
+ */
+
+footnotes: function () {
+  // Delete existing footnote entries in case we're reloading the footnodes.
+  var i;
+  var noteholder = document.getElementById("footnotes");
+  if (!noteholder) {
+    return;
+  }
+  var entriesToRemove = [];
+  for (i = 0; i < noteholder.childNodes.length; i++) {
+    var entry = noteholder.childNodes[i];
+    if (entry.nodeName == 'div' && entry.getAttribute("class") == "footnote")
+      entriesToRemove.push(entry);
+  }
+  for (i = 0; i < entriesToRemove.length; i++) {
+    noteholder.removeChild(entriesToRemove[i]);
+  }
+
+  // Rebuild footnote entries.
+  var cont = document.getElementById("content");
+  var spans = cont.getElementsByTagName("span");
+  var refs = {};
+  var n = 0;
+  for (i=0; i<spans.length; i++) {
+    if (spans[i].className == "footnote") {
+      n++;
+      var note = spans[i].getAttribute("data-note");
+      if (!note) {
+        // Use [\s\S] in place of . so multi-line matches work.
+        // Because JavaScript has no s (dotall) regex flag.
+        note = spans[i].innerHTML.match(/\s*\[([\s\S]*)]\s*/)[1];
+        spans[i].innerHTML =
+          "[<a id='_footnoteref_" + n + "' href='#_footnote_" + n +
+          "' title='View footnote' class='footnote'>" + n + "</a>]";
+        spans[i].setAttribute("data-note", note);
+      }
+      noteholder.innerHTML +=
+        "<div class='footnote' id='_footnote_" + n + "'>" +
+        "<a href='#_footnoteref_" + n + "' title='Return to text'>" +
+        n + "</a>. " + note + "</div>";
+      var id =spans[i].getAttribute("id");
+      if (id != null) refs["#"+id] = n;
+    }
+  }
+  if (n == 0)
+    noteholder.parentNode.removeChild(noteholder);
+  else {
+    // Process footnoterefs.
+    for (i=0; i<spans.length; i++) {
+      if (spans[i].className == "footnoteref") {
+        var href = spans[i].getElementsByTagName("a")[0].getAttribute("href");
+        href = href.match(/#.*/)[0];  // Because IE return full URL.
+        n = refs[href];
+        spans[i].innerHTML =
+          "[<a href='#_footnote_" + n +
+          "' title='View footnote' class='footnote'>" + n + "</a>]";
+      }
+    }
+  }
+},
+
+install: function(toclevels) {
+  var timerId;
+
+  function reinstall() {
+    asciidoc.footnotes();
+    if (toclevels) {
+      asciidoc.toc(toclevels);
+    }
+  }
+
+  function reinstallAndRemoveTimer() {
+    clearInterval(timerId);
+    reinstall();
+  }
+
+  timerId = setInterval(reinstall, 500);
+  if (document.addEventListener)
+    document.addEventListener("DOMContentLoaded", reinstallAndRemoveTimer, false);
+  else
+    window.onload = reinstallAndRemoveTimer;
+}
+
+}
+asciidoc.install();
+/*]]>*/
+</script>
+</head>
+<body class="article">
+<div id="header">
+<h1>Capsule Corp.</h1>
+<span id="author">Roger Bacardit</span><br>
+</div>
+<div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div style="page-break-after:always"></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_dades_alumne">Dades Alumne</h2>
+<div class="sectionbody">
+<div class="paragraph"><p><strong>Curs acadèmic (inscripció PFC):</strong> 2010-2012</p></div>
+<div class="paragraph"><p><strong>Curs acadèmic (entrega PFC):</strong> 2011-2012</p></div>
+<div class="paragraph"><p><strong>Graduat:</strong> Graduat en Multimèdia</p></div>
+<div class="paragraph"><p><strong>Titulació:</strong> GMM05</p></div>
+<div class="paragraph"><p><strong>Pla d’estudis:</strong> Títol Propi</p></div>
+<div class="paragraph"><p><strong>Professor director:</strong></p></div>
+<div class="paragraph"><p><strong>Títol del PFC:</strong> CAPSULE CORP.</p></div>
+<div class="paragraph"><p><strong>Alumne:</strong> Roger Bacardit Muntada</p></div>
+<div class="paragraph"><p><strong>Correu electronic:</strong> <a href="mailto:rogerbacardit@gmail.com">rogerbacardit@gmail.com</a></p></div>
+<div class="paragraph"><p><strong>Correu campus:</strong> rogerbm</p></div>
+<div class="paragraph"><p><strong>DNI:</strong> 45495740S</p></div>
+<div class="paragraph"><p><strong>Telf:</strong> 677 524 957</p></div>
+<div style="page-break-after:always"></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_introducció">Introducció</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>El Projecte consisteix en el <em>remake</em> d’una moto que apareix en els còmics de "Bola de Drac". <tt>cap1</tt></p></div>
+<div class="paragraph"><p>A continuació veureu un projecte imaginari, res més lluny de la realitat, un món de fantasia on he intentat de acostar-lo una mica més al nostre entorn quotidià, desenvolupant un producte que no existeix, on he volgut mantenir la màxima fidelitat al que seria el seu original.</p></div>
+<div class="paragraph"><p>Una de les meves grans passions és el món en 3D, per mi era tot un repte, convertir un producte fruit de la imaginació d’una serie de TV a quelcom més tangible.</p></div>
+<div style="page-break-after:always"></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_objectius">OBJECTIUS</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_objectius_generals">Objectius generals</h3>
+<div class="paragraph"><p>Crear apartir d’un dibuix un objecte tridimensional creïble.</p></div>
+<div class="paragraph"><p>Aconseguir una integració real del objecte creat.</p></div>
+<div class="paragraph"><p>Redissenyar del logotip de la marca (capsule corp).</p></div>
+<div style="page-break-after:always"></div>
+</div>
+<div class="sect2">
+<h3 id="_objectius_específics">Objectius específics</h3>
+<div class="olist arabic"><ol class="arabic">
+<li>
+<p>
+<strong>estudi del model</strong>
+  Creació de la moto en 3D a partir de les imatges obtingudes atraves de captures de TV
+</p>
+</li>
+<li>
+<p>
+<strong>realització dels plans per projectar el model 3D</strong>
+  Apartir del les captures fer una projecció del objecte (planta alçat i perfil), lo més fidel possible, modificant alguns elements perquè pugui semblar real.
+</p>
+</li>
+<li>
+<p>
+<strong>creació del model</strong>
+  Mitjançant el programa C4D donar forma la moto partint de figures bàsiques com ara esferes, caixes, torus. etc..
+</p>
+</li>
+<li>
+<p>
+<strong>texturització</strong>
+  Crear i aplicar una textura en els diversos elements creats per tal de donar un toc més real, ja sigui metall, plàstic, entre d’altres.
+</p>
+</li>
+<li>
+<p>
+<strong>il.luminació</strong>
+  Mitjançant una Il.luminació Global, amb llums de reforç per donar realisme al objecte i millor integració dins l’escena. Sense que prengui protagonisme el propi objecte en sí.
+</p>
+</li>
+<li>
+<p>
+<strong>entorn</strong>
+  Preparar l’entorn per una correcte integració amb els seus elements. Buscar els elements necessaris per col.locar dins del projecte com poden ser: cel, terra, enviroment etc…
+</p>
+</li>
+<li>
+<p>
+<strong>render settingss</strong>
+  La part més complicada, trobar els pressets correctes per tal que dongui el millor resultat possible. I sobretot aplicar els efectes necessaris, com ara, Global ullumination, ambient occlusion, Glow, Lens Effects, Caustics, Anti-alising, hightlights…
+</p>
+</li>
+</ol></div>
+<div style="page-break-after:always"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_bola_de_drac">Bola de Drac</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/dragon_ball_logo.png" alt="image/dragon_ball_logo.png">
+</div>
+</div>
+<div class="sect2">
+<h3 id="_context">Context</h3>
+<div class="paragraph"><p><strong>Bola de Drac</strong> (ドラゴンボール) és una sèrie d’anime creat per Akira Toriyama. El còmic va ser creat des del 1984 fins al 1995 i va ser editat en 42 volums amb un total de 519 capítols.
+La sèrie d’anime va ser realitzada per l’estudi d’animació Toei Animation.</p></div>
+<div class="paragraph"><p>La història de Bola de Drac explica la vida d’en <strong>Son Goku</strong>, un noi amb cua de mico basat en el mite xinès <em>Viatge cap a l’oest</em>, narra la seva vida i aventures com a nen fins que es fa avi. Durant la seva vida, lluita en moltes batalles i es converteix en el lluitador d’arts marcials més fort de l’univers. No obstant això, compta amb l’ajuda dels herois de les arts marcials i amb brivalls que provoquen els conflictes que recondueixen la història.</p></div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/son-goku-as-a-child.jpg" alt="Son Goku">
+</div>
+</div>
+<div style="page-break-after:always"></div>
+<div class="paragraph"><p>Les boles de drac són un dels components de la sèrie i el fil conductor de les aventures de la primera etapa, però no en són l’argument principal. Les boles de drac són set esferes màgiques que estan repartides per tot el món. Quan s’ajunten totes, es poden utilitzar per invocar el drac Shenron, que confereix un desig. Després que el desig s’ha complert, les boles es reparteixen de nou per tot el món i són convertides en pedra i inerts durant un any. En el passat, portava generacions buscar per tot el món i recollir les boles. Al principi de la història, tanmateix, una genial inventora, la Bulma, crea el "radar de les boles de drac" per detectar les boles i fer el procés molt més fàcil.</p></div>
+<div style="page-break-after:always"></div>
+</div>
+<div class="sect2">
+<h3 id="_capsule_corp">Capsule Corp.</h3>
+<div class="paragraph"><p>D’altra banda, el món té una tecnologia avançada incloent-hi les càpsules (hoi poi), que poden encabir un objecte en una petita càpsula, cases, cotxes voladors, avions, motocicletes…</p></div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/Image 2012.04.09 6-28-16 PM.png" alt="Hoi Poi capsule">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_funcionament_de_les_càpsules">Funcionament de les Càpsules</h3>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/capsule_instructions.jpg" alt="image/capsule_instructions.jpg">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/01.jpg" alt="image/01.jpg">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/02.jpg" alt="image/02.jpg">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/03.jpg" alt="image/03.jpg">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/04.jpg" alt="image/04.jpg">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/05.jpg" alt="image/05.jpg">
+</div>
+</div>
+<div class="paragraph"><p>Aquestes càpsules són una patent de l’empresa Capsule Corp. On van desenvolupar la tecnologia necessària per oferir el servei de compressió de càpsules.</p></div>
+<div class="paragraph"><p>Per tal que el projecte tingués una coherència a poguer ser en el màxim possible vaig pensar que seria una bona idea redissenyar el logo de l’empresa, les seves càpsules, així com el packaging, a continuació mostraré el disseny original amb el redissenyat</p></div>
+<div style="page-break-after:always"></div>
+</div>
+<div class="sect2">
+<h3 id="_disseny_original">Disseny original</h3>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/capsule_corp_old_logo.jpg" alt="image/capsule_corp_old_logo.jpg">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/CapsuleCorporationLogo.png" alt="image/CapsuleCorporationLogo.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/capsule_box.jpg" alt="image/capsule_box.jpg">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_redisseny">Redisseny</h3>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/capsule_corp_logo.png" alt="image/capsule_corp_logo.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/new_capsule_box.png" alt="image/new_capsule_box.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/new_inside_box.png" alt="image/new_inside_box.png">
+</div>
+</div>
+<div class="paragraph"><p>Animació nou logotip veure video <a href="http://vimeo.com/19965727">http://vimeo.com/19965727</a></p></div>
+<div class="paragraph"><p>Making of logotip <a href="http://vimeo.com/21603201">http://vimeo.com/21603201</a></p></div>
+<div style="page-break-after:always"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_projecció_en_planta_alçat_i_perfil">Projecció en planta alçat i perfil</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/MOTO_BUSSINES07.jpg" alt="image/MOTO_BUSSINES07.jpg">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/MOTO_BUSSINES05.jpg" alt="image/MOTO_BUSSINES05.jpg">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/MOTO_BUSSINES04.jpg" alt="image/MOTO_BUSSINES04.jpg">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/MOTO_BUSSINES03.jpg" alt="image/MOTO_BUSSINES03.jpg">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/MOTO_BUSSINES09.jpg" alt="image/MOTO_BUSSINES09.jpg">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/MOTO_BUSSINES10.jpg" alt="image/MOTO_BUSSINES10.jpg">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/MOTO_BUSSINES12.jpg" alt="image/MOTO_BUSSINES12.jpg">
+</div>
+</div>
+<div class="sect2">
+<h3 id="_plans_tècnics">Plans tècnics</h3>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/proces.png" alt="image/proces.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/left.jpg" alt="image/left.jpg">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/top_front.jpg" alt="image/top_front.jpg">
+</div>
+</div>
+<div style="page-break-after:always"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_modelatge">Modelatge</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_figures_primitives">Figures primitives</h3>
+<div class="paragraph"><p>El projecte ha estat realitzat pràcticament en objectes primitius, els objectes primitius són paramètrics, és a dir, es crea a partir de fórmules matemàtiques utilitzant una sèrie de valors preestablerts. Una conseqüència d’això és que aquest objecte és inicialment simplement una abstracció matemàtica i <strong>no és modificable.</strong> En llenguatge planer, això significa que els primitius no tenen punts o superfícies que es poden manipular.</p></div>
+<div class="paragraph"><p>Per exemple, no es pot editar una primitiva mitjançant l’eina d’imant, (<em>magnet tool</em>). Per aplicar eines en el polígon, com imant, primer s’ha de convertir la primitiva a polígons.
+Al costat, podeu canviar els valors dels paràmetres d’un objecte, com l’altura o el radi, en qualsevol moment. Això li permet experimentar amb els diferents paràmetres d’un objecte per tal de fer-se una idea de com es veu, i com es comporta.</p></div>
+<div class="paragraph"><p>A més, la majoria dels primitius utilitzen un ombrejat anomenat Phong que serveix per allisar la seva aparença.</p></div>
+<div style="page-break-after:always"></div>
+<div class="paragraph"><p>Això avegades pot portar a problemes quan es fan servir filets bisellats, (un dels principals problemes que he tingut). Sovint pot ser necessari fer malabarismes amb la segmentació i el suavitzat a aconseguir un equilibri entre qualitat i velocitat de processament.</p></div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/modelatge014.png" alt="image/modelatge014.png">
+</div>
+</div>
+<div class="paragraph"><p><tt>A la fotografia següent es pot veure com l’ombreig Phong del cilindre (és a dir, suavitzat) està activada (esquerra), apagat (dreta).</tt></p></div>
+<div style="page-break-after:always"></div>
+</div>
+<div class="sect2">
+<h3 id="_splines">Splines</h3>
+<div class="paragraph"><p>Crea un objecte spline buit. Igual que amb els polígons, és reconeixible per pantalla.
+Podeu utilitzar aquest objecte per a la construcció de les seves pròpies arestes.</p></div>
+<div class="paragraph"><p>Splines són sobretot una seqüència de vèrtexs connectats per línies, s’estén en l’espai 3D. La forma d’aquestes línies de connexió (recta o corba) defineix la interpolació. A part de la connexió directa dels vèrtexs amb línies rectes, rígides, hi ha altres tipus d’splines que utilitzen un mètode d’interpolació on les línies entre els vèrtexs són corbes en lloc de rectes. Aquestes estries tenen una vora d’atac suau, sense arestes vives.</p></div>
+<div class="paragraph"><p>La spline és <strong>infinitament prima.</strong> Un spline no és visible quan es representa. La línia de la spline no té profunditat en tres dimensions, tot i que ocupa l’espai 3D. Hi ha passos que has de seguir per fer una spline visibles per a la representació es pot fer splines utilitzant per fer pèl o bé de croquis o funcions de Torn). Són precisament els passos que he seguit per montar la moto sobre aquestes línes.</p></div>
+<div class="paragraph"><p>No obstant això, molts objectes 3D complexos, entre altres coses, es pot construir en segons fora d’aquestes corbes mitjançant l'ús d’ells amb objectes NURBS. Com ara el cos de la moto.</p></div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/modelatge14.png" alt="image/modelatge14.png">
+</div>
+</div>
+<div style="page-break-after:always"></div>
+<div class="sect3">
+<h4 id="_captures_c4d">Captures C4D</h4>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/inC4D.png" alt="image/inC4D.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/proces02.png" alt="image/proces02.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/proces03.png" alt="image/proces03.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/proces04.png" alt="image/proces04.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/proces05.png" alt="image/proces05.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/modelatge01.png" alt="image/modelatge01.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/modelatge02.png" alt="image/modelatge02.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/modelatge03.png" alt="image/modelatge03.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/modelatge04.png" alt="image/modelatge04.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/modelatge06.png" alt="image/modelatge06.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/modelatge08.png" alt="image/modelatge08.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/modelatge09.png" alt="image/modelatge09.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/modelatge10.png" alt="image/modelatge10.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/modelatge11.png" alt="image/modelatge11.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/modelatge12.png" alt="image/modelatge12.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/modelatge07.png" alt="image/modelatge07.png">
+</div>
+</div>
+<div style="page-break-after:always"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_atributs_generics_dels_materials">Atributs generics dels materials</h2>
+<div class="sectionbody">
+<div class="paragraph"><p><strong>Color</strong>
+Els paràmetres en aquesta pàgina defineixen el color bàsic de la matèria, com ara RGB 255/0/0 per al vermell. Per crear un material més complicat, com un patró de quadres que utilitza diversos colors, es pot carregar una textura. La textura és en capes per sobre del color.
+Si desitja veure el color i no la textura, escolliu el valor d’intensitat de la mescla a 0%.</p></div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/explain_color.png" alt="image/materials/explain_color.png">
+</div>
+</div>
+<div class="paragraph"><p><strong>Diffusion</strong> La pàgina de difusió permet enfosquir o aclarir el material en llocs específics fent servir un mapa a la difusió. Mapes de difusió són especialment útils per a la fabricació de material d’aspecte brut i més realista. Podeu utilitzar una textura normal o d’un ombrejat com el mapa de la difusió. (Si la textura és de color, serà tractat com una escala de grisos mapa). Com més fosc un píxel al mapa de difusió, el més fosc de la regió corresponent del material.</p></div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/explain_diffusion.png" alt="image/materials/explain_diffusion.png">
+</div>
+</div>
+<div class="paragraph"><p><strong>Luminance</strong> Un objecte luminescent es pot veure, fins i tot quan no hi ha llum a l’escena. És auto-il·luminat.
+Com més brillant un píxel al mapa de luminància, el més luminescent la regió corresponent del material. Si vols un color de luminància carrega una textura (mapa de luminància), així, el color s’afegirà al 100% de la força de la textura. Si vols veure el resultat sense el color elegit, establir la força de mescla a 0%.
+Materials luminescents s’utilitzen per ajudar a simular objectes que semblen ser auto-il·luminació en el món real, com ara les finestres d’un edifici d’oficines a la nit, llums de neó o una pantalla de TV.</p></div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/explain_luminance.png" alt="image/materials/explain_luminance.png">
+</div>
+</div>
+<div style="page-break-after:always"></div>
+<div class="paragraph"><p><strong>Transparency</strong> Aquí pot definir la transparència. Si el material té un color, el color es redueix automàticament amb augment de la transparència. L’equació és: percentatge de color + = percentatge de transparència 100%. Així, un material blanc amb 0% de transparència és de color blanc (100%). Un material blanc amb 50% de transparència és 50% blanc (gris). Un material blanc amb un 100% de transparència no té color.</p></div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/explain_transparency.png" alt="image/materials/explain_transparency.png">
+</div>
+</div>
+<div class="paragraph"><p><strong>Reflection</strong> Utilitzant la reflexió es podrà establir la capacitat d’un material per reflexionar.
+El color que estableixi determina el color de la reflexió. També està disponible com textura de color - serà considerat com un mapa de reflexió. El color d’un píxel afectarà el color que es reflecteix des de la superfície corresponent del material.</p></div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/explain_reflection.png" alt="image/materials/explain_reflection.png">
+</div>
+</div>
+<div class="paragraph"><p><strong>Enviroment</strong>
+L’apartat de enviroment utilitza una textura per simular la reflexió. Aquí, al contrast, el color i textura es multipliquen.</p></div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/explain_enviroment.png" alt="image/materials/explain_enviroment.png">
+</div>
+</div>
+<div class="paragraph"><p><strong>Fog</strong> Aquests paràmetres permeten simular núvols de boira o de gas. Els objectes amb aquests materials són transparents, sinó que delimiten la llum que brilla a través d’ells d’acord a la seva densitat.
+S’ha d’utilitzar materials de boira amb objectes tancats només. La boira és un efecte de volum aplicat a l’interior d’un objecte. Per als que no són tancats, C4D no pot determinar l’interior i l’exterior de l’objecte.</p></div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/explain_fog.png" alt="image/materials/explain_fog.png">
+</div>
+</div>
+<div style="page-break-after:always"></div>
+<div class="paragraph"><p><strong>Bump</strong> Les opcions d’aquesta pàgina li permeten simular relleus.</p></div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/explain_bump.png" alt="image/materials/explain_bump.png">
+</div>
+</div>
+<div class="paragraph"><p><strong>Normal</strong>
+Normal mapping és una tècnica que permet donar a un objecte de baix polígon (un baix nivell de detall) una superfície detallada, aparentment estructurat, que resulta en els temps de render baixos.
+Bump mapping utilitza una escala de grisos de mapa de bits per generar dades d’alçada. Normal Mapping utilitza una textura RGB amb l’orientació de codi normal (les normals pot orientar-se en diverses direccions).</p></div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/explain_normal.png" alt="image/materials/explain_normal.png">
+</div>
+</div>
+<div class="paragraph"><p><strong>Alpha</strong>
+Un canal alfa permet utilitzar una imatge per emmascarar les zones de la materia, permetent que qualsevol veure el fons a través d’ell. Això és útil per simular detall en 3D. La idea és definir les àrees del matèrial que efectivament es converteixen en no-existent, perquè tots els materials subjacents o mostrar a través d’objectes. Un exemple clàssic seria un arbre en 3D. En lloc de modelar l’arbre individual, una imatge d’un arbre es pot afegir a un objecte i un alfa utilitzat per tallar la forma de l’arbre.</p></div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/explain_alpha.png" alt="image/materials/explain_alpha.png">
+</div>
+</div>
+<div style="page-break-after:always"></div>
+<div class="paragraph"><p><strong>Specular</strong>
+La reflexió especular o difusa es produeix quan els rajos de la llum xoquen contra una superfície rugosa (sense forma plana), provocant que els rajos reflectits de la llum surtin en direccions molt diferents (depèn de la forma de la superfície).
+El fenomen pel qual l’angle de la radiació reflectida no és el mateix respecte al pla de la superfície, denota la dispersió de llum, la qual pot ser monocromàtica.</p></div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/explain_specular.png" alt="image/materials/explain_specular.png">
+</div>
+</div>
+<div style="page-break-after:always"></div>
+<div class="paragraph"><p><strong>Specular color</strong>
+El color total es multiplica pel color normal del més destacat. Per exemple, si es té un toc de llum blanca de plàstic, pot definir el seu color aquí directament.
+La intensitat de la especular es veu afectada per cap imatge de la textura triada (en color o en escala de grisos). Com més brillant és un píxel en la imatge, la més evident el punt culminant serà en aquest punt.</p></div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/explain_specular_color.png" alt="image/materials/explain_specular_color.png">
+</div>
+</div>
+<div class="paragraph"><p><strong>Glow</strong>
+Defineix l’halo de llum al voltant d’un objecte.</p></div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/explain_glow.png" alt="image/materials/explain_glow.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/explain_glow_02.png" alt="image/materials/explain_glow_02.png">
+</div>
+</div>
+<div style="page-break-after:always"></div>
+<div class="paragraph"><p><strong>Displacement</strong>
+El desplaçament és similar al "Bump", la diferència que aquí l’objecte es deforma realment. Aquesta diferència s’observa millor a les vores de l’objecte.</p></div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/explain_displacement_02.png" alt="image/materials/explain_displacement_02.png">
+</div>
+</div>
+<div class="paragraph"><p><tt>En l’exemple, la meitat esquerra de l’esfera utilitza mapa de relleu, mentre que la meitat dreta utilitza mapatge de desplaçament.</tt></p></div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/explain_displacement.png" alt="image/materials/explain_displacement.png">
+</div>
+</div>
+<div class="paragraph"><p><strong>Editor</strong>
+Diversos paràmetres, principalment de la canal d’il·luminació millorat i pertanyent a OpenGL.
+costum</p></div>
+<div style="page-break-after:always"></div>
+<div class="paragraph"><p><strong>Illumination</strong>
+Aquí és on trobareu tots els paràmetres relatius a la il·luminació global i la pantalla dels canals de materials en millorada OpenGL (no ombrejat de volum 3D) de manera.</p></div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/GI_explain_01.png" alt="image/materials/GI_explain_01.png">
+</div>
+</div>
+<div style="page-break-after:always"></div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/GI_explain_02.png" alt="image/materials/GI_explain_02.png">
+</div>
+</div>
+<div class="paragraph"><p><tt>QMC Quantum Monte Carlo</tt></p></div>
+<div class="paragraph"><p>Mètode de MonteCarlo són una classe d’algoritmes computacionals que es basen en un mostreig aleatori repetides per calcular els seus resultats. Mètodes de Montecarlo s’utilitza sovint en simulacions per ordinador de sistemes físics i matemàtics. Aquests mètodes són més adequats per al càlcul d’un ordinador i tendeixen a ser utilitzat quan no és factible per calcular un resultat exacte.
+Mètodes de Montecarlo són especialment útils per a la simulació de sistemes amb molts graus de llibertat, com ara els líquids, materials desordenats, sòlids fortament acoblats i estructures cel·lulars.</p></div>
+<div style="page-break-after:always"></div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/GI_explain_03.png" alt="image/materials/GI_explain_03.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/GI_explain_04.png" alt="image/materials/GI_explain_04.png">
+</div>
+</div>
+<div style="page-break-after:always"></div>
+<div class="paragraph"><p><strong>Assignment</strong>
+Feu clic en aquest botó per crear un Channal personalitzat.
+assignació
+Els materials assignats a un objecte s’enumeren aquí. Alternativament, un objecte també es pot arrossegar i deixar anar en aquest camp</p></div>
+<div style="page-break-after:always"></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_materials">MATERIALS</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/textures.jpg" alt="image/textures.jpg">
+</div>
+</div>
+<div class="paragraph"><p>A continuació trobem tots els materials emprats en el projecte i una descripció dels seus atributs.</p></div>
+<div style="page-break-after:always"></div>
+<div class="sect2">
+<h3 id="_sillín">Sillín</h3>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_carbon.jpg" alt="image/materials/textures/pfc_carbon.jpg">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_sillin_color.png" alt="image/materials/textures/pfc_sillin/pfc_sillin_color.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_layer_mix.png" alt="image/materials/textures/pfc_sillin/pfc_layer_mix.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_1st_layer.png" alt="image/materials/textures/pfc_sillin/pfc_1st_layer.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_2n_layer.png" alt="image/materials/textures/pfc_sillin/pfc_2n_layer.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_specular_color.png" alt="image/materials/textures/pfc_sillin/pfc_specular_color.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_specular.png" alt="image/materials/textures/pfc_sillin/pfc_specular.png">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_entorn_estudi">Entorn estudi</h3>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_enviroment.jpg" alt="image/materials/textures/pfc_enviroment.jpg">
+</div>
+</div>
+<div class="paragraph"><p>Alt rang dinàmic en les imatges <strong>HDRI</strong> és un conjunt de tècniques que permeten un major rang dinàmic entre l'àrea il·luminades i fosques d’una imatge. Aquest ampli rang dinàmic permet que les imatges HDR permet representar amb més precisió els nivells d’intensitat lumínica que es troben en escenaris reals, on van des de la llum solar directe, a la llum tènue, i sovint es capturen per mitjà d’una pluralitat d’imatges exposades de manera diferent entre elles.</p></div>
+<div class="paragraph"><p>Una imatge amb el procediment estàndard, no podem obtenir un resultat de detall en àrees brillants o fosques d’una imatge, depenent de si la càmera tenia un ajust de l’exposició baix o alt. HDR compensa aquesta pèrdua de detall, prenent diverses fotografies a diferents nivells d’exposició perquè finalment arribi a una imatge que sigui representativa tant en les àrees fosques i brillants.</p></div>
+<div style="page-break-after:always"></div>
+</div>
+<div class="sect2">
+<h3 id="_terra">Terra</h3>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_floor.jpg" alt="image/materials/textures/pfc_floor.jpg">
+</div>
+</div>
+<div class="sect3">
+<h4 id="_color_terra">Color - Terra</h4>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/floor_color.jpg" alt="image/materials/floor_color.jpg">
+</div>
+</div>
+<div style="page-break-after:always"></div>
+</div>
+<div class="sect3">
+<h4 id="_bump_terra">Bump -  Terra</h4>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/floor_bump.jpg" alt="image/materials/floor_bump.jpg">
+</div>
+</div>
+<div style="page-break-after:always"></div>
+</div>
+<div class="sect3">
+<h4 id="_reflection_terra">Reflection - Terra</h4>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/floor_reflection.jpg" alt="image/materials/floor_reflection.jpg">
+</div>
+</div>
+<div style="page-break-after:always"></div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_vidre_intermitent">Vidre intermitent</h3>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_intermitent.jpg" alt="image/materials/textures/pfc_intermitent.jpg">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_vidre_intermitent_bump.png" alt="image/materials/textures/pfc_vidre_intermitent/pfc_vidre_intermitent_bump.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_vidre_intermitent_color.png" alt="image/materials/textures/pfc_vidre_intermitent/pfc_vidre_intermitent_color.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_vidre_intermitent_reflection.png" alt="image/materials/textures/pfc_vidre_intermitent/pfc_vidre_intermitent_reflection.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_vidre_intermitent_specular.png" alt="image/materials/textures/pfc_vidre_intermitent/pfc_vidre_intermitent_specular.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_vidre_intermitent_transparency.png" alt="image/materials/textures/pfc_vidre_intermitent/pfc_vidre_intermitent_transparency.png">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_gear_velocity_rpm_image_background">Gear, velocity, rpm image background</h3>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_gear_metter.jpg" alt="image/materials/textures/pfc_gear_metter.jpg">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_gear_metter_color.png" alt="image/materials/textures/pfc_gear_metter_color.png">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_glass_metter">Glass metter</h3>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_glass_metter.jpg" alt="image/materials/textures/pfc_glass_metter.jpg">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_glass_color.png" alt="image/materials/textures/pfc_glass_generic/pfc_glass_color.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_reflection_layer.png" alt="image/materials/textures/pfc_glass_generic/pfc_reflection_layer.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_reflection_hdri.png" alt="image/materials/textures/pfc_glass_generic/pfc_reflection_hdri.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_glass_specular.png" alt="image/materials/textures/pfc_glass_generic/pfc_glass_specular.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_glass_transparency.png" alt="image/materials/textures/pfc_glass_generic/pfc_glass_transparency.png">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_vidre_light">Vidre light</h3>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_glass_light.jpg" alt="image/materials/textures/pfc_glass_light.jpg">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_light_glass_color.png" alt="image/materials/textures/pfc_light_glass/pfc_light_glass_color.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_light_glass_bump.png" alt="image/materials/textures/pfc_light_glass/pfc_light_glass_bump.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_light_glass_reflection.png" alt="image/materials/textures/pfc_light_glass/pfc_light_glass_reflection.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_light_glass_specular.png" alt="image/materials/textures/pfc_light_glass/pfc_light_glass_specular.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_light_glass_transparency.png" alt="image/materials/textures/pfc_light_glass/pfc_light_glass_transparency.png">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_dirt">Dirt</h3>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_dirt.png" alt="image/materials/textures/pfc_dirt.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_dirt_alpha.png" alt="image/materials/textures/pfc_dirt/pfc_dirt_alpha.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_dirt_alpha_img.png" alt="image/materials/textures/pfc_dirt/pfc_dirt_alpha_img.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_dirt_reflection.png" alt="image/materials/textures/pfc_dirt/pfc_dirt_reflection.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_dirt_specular.png" alt="image/materials/textures/pfc_dirt/pfc_dirt_specular.png">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_vidre_freno">Vidre freno</h3>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_freno.jpg" alt="image/materials/textures/pfc_freno.jpg">
+</div>
+</div>
+<div class="paragraph"><p><span class="image">
+<img src="./documentacio_files/pfc_intermitent_bump.png" alt="image/materials/textures/pfc_intermitent/pfc_intermitent_bump.png">
+</span>
+<span class="image">
+<img src="./documentacio_files/pfc_intermitent_color.png" alt="image/materials/textures/pfc_intermitent/pfc_intermitent_color.png">
+</span>
+<span class="image">
+<img src="./documentacio_files/pfc_intermitent_reflection.png" alt="image/materials/textures/pfc_intermitent/pfc_intermitent_reflection.png">
+</span>
+<span class="image">
+<img src="./documentacio_files/pfc_intermitent_transparency.png" alt="image/materials/textures/pfc_intermitent/pfc_intermitent_transparency.png">
+</span>
+<span class="image">
+<img src="./documentacio_files/pfc_intermitent_specular.png" alt="image/materials/textures/pfc_intermitent/pfc_intermitent_specular.png">
+</span></p></div>
+<div style="page-break-after:always"></div>
+</div>
+<div class="sect2">
+<h3 id="_mirall">Mirall</h3>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_mirall.jpg" alt="image/materials/textures/pfc_mirall.jpg">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_mirall_color.png" alt="image/materials/textures/pfc_mirall/pfc_mirall_color.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_mirall_reflection.png" alt="image/materials/textures/pfc_mirall/pfc_mirall_reflection.png">
+</div>
+</div>
+<div style="page-break-after:always"></div>
+</div>
+<div class="sect2">
+<h3 id="_reixa">Reixa</h3>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_rejilla.jpg" alt="image/materials/textures/pfc_rejilla.jpg">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_reixa_alpha.png" alt="image/materials/textures/pfc_grill/pfc_reixa_alpha.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_reixa_color.png" alt="image/materials/textures/pfc_grill/pfc_reixa_color.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_reixa_layermix.png" alt="image/materials/textures/pfc_grill/pfc_reixa_layermix.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_reixa_specular.png" alt="image/materials/textures/pfc_grill/pfc_reixa_specular.png">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_acer">Acer</h3>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_steel.jpg" alt="image/materials/textures/pfc_steel.jpg">
+</div>
+</div>
+<div class="sect3">
+<h4 id="_color_acer">Color - Acer</h4>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/steel_color.jpg" alt="image/materials/steel_color.jpg">
+</div>
+</div>
+<div style="page-break-after:always"></div>
+</div>
+<div class="sect3">
+<h4 id="_reflection_acer">Reflection - Acer</h4>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/steel_reflection.jpg" alt="image/materials/steel_reflection.jpg">
+</div>
+</div>
+<div style="page-break-after:always"></div>
+</div>
+<div class="sect3">
+<h4 id="_bump_acer">Bump - Acer</h4>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/steel_bump.jpg" alt="image/materials/steel_bump.jpg">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_especular_acer">Especular - Acer</h4>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/steel_specular.png" alt="image/materials/steel_specular.png">
+</div>
+</div>
+<div style="page-break-after:always"></div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_plàstic_cos_moto">Plàstic cos moto</h3>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_whiteplastic.jpg" alt="image/materials/textures/pfc_whiteplastic.jpg">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_plastic_reflection.png" alt="image/materials/textures/pfc_plastic_reflection.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_plastic.jpg" alt="image/materials/textures/pfc_plastic.jpg">
+</div>
+</div>
+<div style="page-break-after:always"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_entorn">Entorn</h2>
+<div class="sectionbody">
+<div class="paragraph"><p><tt>Objects pannel</tt></p></div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_objects_file.png" alt="image/pfc_document_enviroment/pfc_objects_file.png">
+</div>
+</div>
+<div class="paragraph"><p><tt>Scene capture</tt></p></div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_scene_final.png" alt="image/pfc_document_enviroment/pfc_scene_final.png">
+</div>
+</div>
+<div class="paragraph"><p><tt>example render</tt></p></div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_render_example.png" alt="image/pfc_document_enviroment/pfc_render_example.png">
+</div>
+</div>
+<div class="paragraph"><p><tt>Background color</tt></p></div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_background.png" alt="image/pfc_document_enviroment/pfc_background.png">
+</div>
+</div>
+<div class="paragraph"><p><tt>Floor</tt></p></div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_disc_seamless_floor.png" alt="image/pfc_document_enviroment/pfc_disc_seamless_floor.png">
+</div>
+</div>
+<div class="paragraph"><p><tt>Enviroment</tt></p></div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_enviroment.png" alt="image/pfc_document_enviroment/pfc_enviroment.png">
+</div>
+</div>
+<div class="paragraph"><p><tt>HDR illumination</tt></p></div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_illumination_sky_HDR_studio.png" alt="image/pfc_document_enviroment/pfc_illumination_sky_HDR_studio.png">
+</div>
+</div>
+<div class="paragraph"><p><tt>HDR reflection</tt></p></div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_reflection_sky_HDR_studio.png" alt="image/pfc_document_enviroment/pfc_reflection_sky_HDR_studio.png">
+</div>
+</div>
+<div class="paragraph"><p><tt>HDR image enviroment</tt></p></div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_HDR_image_enviroment.png" alt="image/pfc_document_enviroment/pfc_HDR_image_enviroment.png">
+</div>
+</div>
+<div class="paragraph"><p><tt>sky background color</tt></p></div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_sky_seamless_floor.png" alt="image/pfc_document_enviroment/pfc_sky_seamless_floor.png">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_render_settings">Render settings</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_render_settings.png" alt="image/render_settings/pfc_render_settings.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_output.png" alt="image/render_settings/pfc_output.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_options.png" alt="image/render_settings/pfc_options.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_anti_aliasing.png" alt="image/render_settings/pfc_anti_aliasing.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_caustics.png" alt="image/render_settings/pfc_caustics.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_general.png" alt="image/render_settings/pfc_general.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_global_illumination.png" alt="image/render_settings/pfc_global_illumination.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_glow_intermitents.png" alt="image/render_settings/pfc_glow_intermitents.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_glow_intermitents2.png" alt="image/render_settings/pfc_glow_intermitents2.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_glow_intermitents3.png" alt="image/render_settings/pfc_glow_intermitents3.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_glow.png" alt="image/render_settings/pfc_glow.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_glow2.png" alt="image/render_settings/pfc_glow2.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_highlights_intermitents.png" alt="image/render_settings/pfc_highlights_intermitents.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_highlights.png" alt="image/render_settings/pfc_highlights.png">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./documentacio_files/pfc_highlights2.png" alt="image/render_settings/pfc_highlights2.png">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_refències_i_bibliografia">REFÈNCIES i BIBLIOGRAFIA</h2>
+<div class="sectionbody">
+<div class="ulist"><ul>
+<li>
+<p>
+<a href="http://www.cuevana.tv/peliculas/948/2081-everyone-will-finally-be-equal/">2081</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://en.wikipedia.org/wiki/Babylon_A.D.">Babylon A.D. - Wikipedia, the free encyclopedia</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://en.wikipedia.org/wiki/Battle_Royale_(film)">Battle Royale (film) - Wikipedia, the free encyclopedia</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://en.wikipedia.org/wiki/Blade_Runner">Blade Runner - Wikipedia, the free encyclopedia</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://en.wikipedia.org/wiki/The_Bothersome_Man">The Bothersome Man - Wikipedia, the free encyclopedia</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://en.wikipedia.org/wiki/2081_(film)">2081 (film) - Wikipedia, the free encyclopedia</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://en.wikipedia.org/wiki/Brazil_(film)">referencies visuals wiki</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://en.wikipedia.org/wiki/Children_of_Men">Children of Men - Wikipedia, the free encyclopedia</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://en.wikipedia.org/wiki/Dark_Metropolis_(film)">Dark Metropolis - Wikipedia, the free encyclopedia</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://en.wikipedia.org/wiki/Code_46">Code 46 - Wikipedia, the free encyclopedia</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://en.wikipedia.org/wiki/%C3%86on_Flux_(film)">Ã†on Flux (film) - Wikipedia, the free encyclopedia</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://en.wikipedia.org/wiki/Gattaca">referencies visuals gattaca</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://en.wikipedia.org/wiki/The_Island_(2005_film)">The Island (2005 film) - Wikipedia, the free encyclopedia</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://en.wikipedia.org/wiki/Metropolis_(film)">Metropolis (film) - Wikipedia, the free encyclopedia</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.youtube.com/watch?v=rD_-flw9IcQ&feature=watch-now-button&wide=1">Metropolis - youtube</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.depauw.edu/sfs/index.htm">sci-fi studies</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://en.wikipedia.org/wiki/Tech_noir">referencies visuals tech-noir</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://en.wikipedia.org/wiki/Film_noir">referencies visuals film-noir</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://inicia.es/de/alt64/articulo/gattaca.htm">referencies visuals Gattaca critica</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.taringa.net/posts/tv-peliculas-series/9258798/Gattaca-%3Cem%3E1997%3C/em%3E-Full-HD-1080p-16_9-Widescreen-BDrip-1424x800.html">gattaca movie hd download megaupload</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://es.wikipedia.org/wiki/La_carretera_(pel%C3%ADcula)">referencies visuals la carretera</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://es.wikipedia.org/wiki/Distop%C3%ADa">llista de pelicules post apocaliptic</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://en.wikipedia.org/wiki/A_Single_Man_(film)">A Single Man (film) - Wikipedia, the free encyclopedia</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.youtube.com/watch?v=wcLk7DNX2ok">Goku Training For Namek Full(3/3) - YouTube</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://it.wikipedia.org/wiki/File:BMW_C1_Roller.jpg">File:BMW C1 Roller.jpg - Wikipedia</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.egmcartech.com/2009/10/06/bmw-c1-e-concept-an-electrical-take-at-the-bmw-c1/">BMW C1-E Concept: An electrical take at the BMW C1 | egmCarTech</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://manga.gamestotal.com/en/read/Dragonball/1/">Manga @ Gamestotal.com read manga online for free</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://manga.gamestotal.com/en/chapter/Dragonball/manga/">Read Dragonball manga | Download Dragonball comics | Read manga online for free</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.artofthetitle.com/2011/01/24/quantum-of-solace/">Quantum of Solace opening title sequence | The Art of the Title Sequence</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.motionserved.com/gallery/Influence-Of-Nature/891286">Influence Of Nature on Motion Graphics Served</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.videocopilot.net/tutorials/glass_orbs/">VIDEO COPILOT | After Effects Tutorials, Plug-ins and Stock Footage for Post Production Professionals</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://camarinox.deviantart.com/art/DB-Capsule-9-Bike-178462254?q=gallery%3Acamarinox%2F24294862&qo=15">DB - Capsule 9 Bike by ~camarinox on deviantART</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://openthetoy.blogspot.com/2009/06/dragonball-vehicle-4-capsule-9.html">Open The Toy: Dragonball Vehicle 4: Capsule 9 Motorbike</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://freshome.com/2011/02/11/amazing-rental-villa-with-panoramic-views-in-south-africa/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+FreshInspirationForYourHome+%28Fresh+Inspiration+for+Your+Home%29&utm_content=Google+Reader">CAPSULE CORP HOUSE</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://freshome.com/2011/02/02/one-more-astounding-architecture-project-by-a-cero-concrete-house-i/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+FreshInspirationForYourHome+%28Fresh+Inspiration+for+Your+Home%29&utm_content=Google+Reader">CAPSULE CORP house 2</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://vimeo.com/19469447">KILL BILL REFERENCES BY TARANTINO</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://cg.tutsplus.com/tutorials/maxon-cinema-4d/3d_cg_vfx_maxon_cinema4d_abstract_scene_create_after_effects_lighting_animating_rendering/">Abstract Scene using C4D &amp; AE</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.industrialdesignserved.com/gallery/Tron-Light-Cycle-Promotional-property/675956">Tron "Light Cycle" Promotional property on Industrial Design Served</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.yankodesign.com/2011/02/21/levitating-mass-transit/">EOL Maglev Train Concept by Vanja Valencak Â» Yanko Design</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.youtube.com/watch?v=E3B__ovj2jU&feature=related">YouTube - Areva</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.core77.com/blog/object_culture/designer_dumas_wants_you_to_live_in_a_bubble_18632.asp?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+core77%2Fblog+%28Core77.com%27s+design+blog%29">Designer Dumas Wants You to Live in a Bubble - Core77</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.strob.net/2011/02/06/mon-making-of-du-iron-baby/">Strob.net StrobFX.com â€“ Mon â€œMaking Ofâ€ du Iron Baby</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://vimeo.com/12125147">Iron Baby on Vimeo</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.eos550d.com/2010/03/how-to-timelapse/">Canon EOS 550D | Blog | How to Timelapse</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.masquevideo.com/">MAS QUE VIDEO PROFESIONAL</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.youtube.com/watch?v=-iBLX2biyfM&feature=player_embedded">YouTube - Xlidercam &amp; Kietacam3 Pro Ultimate</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.yerobot.com/shop/arduino/arduino-lcd-shield.html">LCD Shield For Arduino - Arduino - Robot Shop</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://openmoco.org/node/295">Timelapse Calculator v0.1 Released | OpenMoCo</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://roamingdrone.wordpress.com/page/3/">The Roaming Drone</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://cg.tutsplus.com/tutorials/maxon-cinema-4d/create-a-jelly-like-text-animation-in-cinema-4d-and-after-effects/">Create a Jelly-like Text Animation in Cinema 4D and After Effects</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://cg.tutsplus.com/articles/web-roundups/3d_cg_vfx_roundup_car_vehicle_modeling_lighting_texturing_rendering/">15 More Amazing Vehicles</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://cg.tutsplus.com/tutorials/newtek-lightwave/newtek_lightwave_adobe_after_effects_lightwave10_scripting_modelling_tutorial_2/">Creating a Dynamic Pie Chart using Lightwave &amp; After Effects â€“ Animation</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://cg.tutsplus.com/tutorials/maxon-cinema-4d/3d_cg_cinema4d_nurbs_modeling_lathe_sweep_loft_hypernurbs_bezier/">Cinema 4D â€“ A Look at Nurbs</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://cg.tutsplus.com/tutorials/luxology-modo/luxology_modo_modeling_lighting_rendering_soap_scene_subdivision_materials_texturing/">Create A Soap Scene In Modo</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://cg.tutsplus.com/freebies/3d-models/3d_cg_vfx_3dsmax_wood_bench_free_model_textured_max_3ds_obj_diffuse_bump/">Freebie : Japanese Wooden Bench</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://cg.tutsplus.com/tutorials/maxon-cinema-4d/3d_cg_cinema4d_maxon_rendering_texturing_lighting_modeling_dumbbells_tutorial_layout/">Modelling and Rendering a Dumbbells Scene in C4D â€“ Scene Setup</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://cg.tutsplus.com/tutorials/autodesk-3d-studio-max/3d_cg_vfx_autodesk_3dsmax_eyeon_fusion_compositing_rendering_post_production/">A Look at a 3DsMax to Fusion Post Workflow</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://cg.tutsplus.com/tutorials/maxon-cinema-4d/c4d_cinema4d_maxon_clank_modeling_day1/">Create a High Rez Clank Model in Cinema 4D â€“ Day 1</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://cg.tutsplus.com/articles/web-roundups/35-stunning-interior-renders/">35 Stunning Interior Renders</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://cg.tutsplus.com/tutorials/chaos-group-vray/compositing-v-ray-render-layers-in-photoshop/">V-ray Render Layers in Photoshop</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://cg.tutsplus.com/tutorials/autodesk-3d-studio-max/modelling-rendering-an-interior-scene-using-3ds-max-and-vray-day-2/">Modelling &amp; Rendering an Interior Scene using 3Ds Max and Vray â€“ Day 2</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://cg.tutsplus.com/tutorials/maxon-cinema-4d/create-a-futuristic-airship-scene-in-c4d-day-1/">Create a Futuristic Airship Scene in C4D â€“ Day 1</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://cg.tutsplus.com/tutorials/maxon-cinema-4d/quick-tip-modelling-and-rendering-a-pillow-in-c4d/">Quick Tip : Modelling and Rendering a Pillow in C4D</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://cg.tutsplus.com/tutorials/maxon-cinema-4d/using-depth-of-field-with-vray-in-cinema-4d/">Using Depth of Field with VRay in Cinema 4D</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://cg.tutsplus.com/tutorials/maxon-cinema-4d/model-texture-and-render-an-interior-scene-with-cinema-4d-and-vray-%E2%80%93-day-1/">Interior Scene With Cinema 4D and VRay, Day 1 * * * * *</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://cg.tutsplus.com/tutorials/maxon-cinema-4d/model-texture-and-render-an-interior-scene-with-cinema-4d-and-vray-%E2%80%93-day-2/">Interior Scene With Cinema 4D and VRay, Day 2 * * * * *</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://cg.tutsplus.com/tutorials/maxon-cinema-4d/seamlessly-blend-3d-typography-with-a-photo-using-cinema-4d-and-photoshop/">Seamlessly Blend 3d Typography with a Photo using Cinema 4D and Photoshop</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://cg.tutsplus.com/tutorials/maxon-cinema-4d/linear-workflow-for-gamma-correct-lighting-in-cinema-4d/">Linear Workflow for Gamma Correct Lighting in Cinema 4D</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://cg.tutsplus.com/tutorials/maxon-cinema-4d/create-a-realistic-subway-station-scene-using-cinema-4d-and-after-effects/">Create a Realistic Subway Station Scene using Cinema 4D and After Effects</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://cg.tutsplus.com/tutorials/autodesk-3d-studio-max/realistically-light-and-render-interior-scenes-using-3ds-max-and-vray/">Realistically Light and Render Interior Scenes using 3ds Max and Vray</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.youtube.com/watch?v=Z1WTcpwyIBs&feature=related">YouTube - Cinema 4D Basic Projection/Camera Mapping &amp; 3D Integration Tutorial (Part 2)</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.megaupload.com/?d=VL0YZ6J0">MEGAUPLOAD - The leading online storage and file delivery service</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.openfootage.net/">openfootage</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.openfootage.net/?paged=4">openfootage - Part 4</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://monkeyzen.com/2011/03/tron-the-legacy-y-en-la-vida-real">Tron: the legacy, y en la vida real en Monkeyzen (Cocina)</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.youtube.com/watch?v=Mg5Rux1VYjA&playnext=1&list=PL3EF2D6998729B4F3">YouTube - VRay indoor illumination tutorial</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.thec4dvault.com/">The C4D Vault</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.vrayforc4d.com/portal/">Welcome | www.vrayforc4d.com</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.youtube.com/watch?v=HpiVeC1Z3yI&feature=player_embedded">YouTube - Apple - iPad: Year One</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.vimeo.com/1197929">VrayForC4D Basic Lighting on Vimeo</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://lzooml.deviantart.com/art/VrayforC4D-Basic-Tutorial-102029372">VrayforC4D Basic Tutorial by ~lzooml on deviantART</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.youtube.com/watch?v=dnx7pXB2zgs">YouTube - How to create pillow in 3D</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.heroturko.org/3d/914366-mentor-plants-hq-grass-c4d-format-only.html">Mentor Plants HQ grass (C4D format only) Download All You Want - HeroTurko.org</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://sighmon.com/timelapse-helper/">Timelapse Helper iPhone application</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.diyphotography.net/a-timelapse-rail-from-bbq-rotisserie-motor">A TimeLapse Rail from BBQ rotisserie motor | DIYPhotography.net</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://vimeo.com/15618585">Summer Lapse on Vimeo</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://raykcooldl.blogspot.com/2010/12/3d-max-models-hq-plants-vol2-2011.html">3D Max Models - HQ Plants Vol.2-2011 | RAYKCOOL DL</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.vimeo.com/17686549">HQ Grass Tutorial. on Vimeo</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.yankodesign.com/2011/03/14/ultra-utilitarian/">Kitchen Sink by BLANCORONIS Â» Yanko Design</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.yankodesign.com/2011/03/14/water-factory-in-my-bathroom/">Waterfactory Bathroom Equipment by Joao Goncalves Â» Yanko Design</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.core77.com/blog/object_culture/sieger_design_dornbracht_pushing_bathroom_boundaries_18766.asp?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+core77%2Fblog+%28Core77.com%27s+design+blog%29">Sieger Design &amp; Dornbracht, pushing Bathroom Boundaries - Core77</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://psd.tutsplus.com/tutorials/icon-design/create-a-camera-lens-icon-in-photoshop-screencast/">dashboard example</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://psd.tutsplus.com/tutorials/interface-tutorials/how-to-create-a-highly-detailed-hi-tech-power-button-basix/">dashboard</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://blog.guifx.com/2009/04/03/creating-a-knob-in-photoshop/">Guifx : Creating a Knob in Photoshop [Video</a>]
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.dynamicperception.com/">Dynamic Perception LLC, Open-Source TimeLapse Motion Control Systems</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://vimeo.com/21216091">Blinkyâ„¢ on Vimeo</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.videocopilot.net/basic/tutorials/07.3d/">VIDEO COPILOT | After Effects Tutorials, Plug-ins and Stock Footage for Post Production Professionals</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.videocopilot.net/tutorial/blueprint_reveal/">PRESENTACIO LOGO CAPSULE CORP</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.videocopilot.net/tutorial/3d_crater_p1/">001 INTEGRATION 3D CAMERA TRACK</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.c4dtraining.com/Tutorials/netRender/netRender.html">Net Render tutorial</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://renderpimp.blogspot.com/search?updated-max=2010-09-08T13%3A17%3A00-07%3A00&max-results=7">RenderPimp 3D tutorials, models and other resources</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.yankodesign.com/2011/03/31/a-circular-wonder-called-kitchen/">Soria â€“ Kitchen Workstation Concept by Vitor Xavier Â» Yanko Design</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://jtnimoy.net/workviewer.php?q=178">jtnimoy - Tron Legacy (2010)</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.inventinginteractive.com/2011/03/02/interview-gmunk/">Interview: GMUNK (TRON: Legacy) | Inventing Interactive</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.gmunk.tv/">.tv | GMUNK</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://digitaldomainvip.com/">Digital Domain: The Making of Tron Legacy</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://moullinex.tumblr.com/">Moullinex</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.3dsoftware.cz/3dportal/clanek.aspx?id=1051">Making Realistic Grass with Cinema 4D (with a little help from Mograph and Hair), 2nd part | 3Dsoftware.cz</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.3dsoftware.cz/3dportal/clanek.aspx?id=1047">Making Realistic Grass with Cinema 4D (with a little help from Mograph and Hair), 1st part | 3Dsoftware.cz</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.3dsoftware.cz/3dportal/clanek.aspx?id=1080">Making Realistic Grass with Cinema 4D (with a little help from Mograph and Hair), third part | 3Dsoftware.cz</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.youtube.com/user/MaxonC4D#p/c/13/YK6jnImvEjY">YouTube - MaxonC4D's Channel</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.yankodesign.com/2011/04/05/the-lunar-effect-on-faucets/">Luna Faucet Design by Graff Â» Yanko Design</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://pctutorial.net/creating_a_car_tyre_tutorial.html">Creating A Car Tyre Tutorial - Best Cinema 4D Tutorials On Tutorial Guide</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://cg.tutsplus.com/tutorials/autodesk-mudbox/sculpting-a-modular-stone-staircase-in-autodesk-mudbox/">Sculpting a Modular Stone Staircase in Autodesk Mudbox</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://cg.tutsplus.com/tutorials/maxon-cinema-4d/3d_cg_vfx_c4d_cinema4d_lighting_rendering_global_illumination_gi/">Illumination Techniques In Cinema4D</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://cg.tutsplus.com/tutorials/autodesk-3d-studio-max/3d_cg_vfx_modeling_autodesk_3dsmax_subdivision_smoothing/">Quick Tip: Understanding Support Edge Placement</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.behance.net/gallery/IL-Istruzioni-per-luso/1191341">infografia capsules</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.svoigt.net/index.php/downloads/23-downloads/57-free-stereoscopic-camera-rig-for-cinema-4d">Download free stereoscopic camera rig for Cinema 4D</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.motionserved.com/gallery/Billy-And-Cooper-(-TVC-)/1147451">Billy And Cooper ( TVC ) on Motion Graphics Served</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.youtube.com/watch?v=LXcVNpy6Ygo">YouTube - Render Tutorial for Cinema 4D</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.digitalfran.com/TUTO-VASO/tuto_vaso2.htm">glass HDRI MATERIAL</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.c4dtraining.com/Tutorials/emitterProject/emitterProject.html">Cinema 4D and After Effects</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.industrialdesignserved.com/gallery/Electric/863711">Electric on Industrial Design Served</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.industrialdesignserved.com/gallery/Hide-able-Kitchen/865813">Hide-able Kitchen on Industrial Design Served</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.industrialdesignserved.com/gallery/BOTTPower-M210Moto2-racing-bike/810129">BOTTPower M210,Moto2 racing bike on Industrial Design Served</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.typographyserved.com/gallery/SAN-MIGUEL-00/1096455">SAN MIGUEL 0,0 on Typography Served</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.cineversity.com/">Cineversity</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.oyonale.com/modeles.php?lang=en&format=C4D">Free 3D models - Free Cinema 4D models</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://vimeo.com/17631561">MODERN TIMES on Vimeo</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://vimeo.com/17761334">Behind the Scenes on Vimeo</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.c4dcafe.com/ipb/files/file/571-animating-sketch-toon-lines/">Animating Sketch &amp; Toon Lines - C4D Cafe</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.c4dcafe.com/ipb/files/file/186-harley-davidson-motorcycle/">Harley Davidson MotorCycle - C4D Cafe</a>
+</p>
+</li>
+<li>
+<p>
+<a href="https://docs.google.com/viewer?url=http%3A%2F%2Fhttp.maxon.net%2Fpub%2Fr9%2Fdocs%2Fmanual_sketch_9.0_us.pdf">manual_sketch_9.0_us.pdf - Powered by Google Docs</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.dreamlight.com/insights/10/advanced_network_rendering.html">Advanced Network Rendering with Mac ScreamerNet, Mastering LightWave ScreamerNet for Mac OS X, DreamLight Insight #10</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.industrialdesignserved.com/gallery/Kobra/792818">moto kobra</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.industrialdesignserved.com/gallery/EcoJet/674973">EcoJet on Industrial Design Served</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.industrialdesignserved.com/gallery/Hima-SnowMobile/717238">Hima SnowMobile on Industrial Design Served</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.industrialdesignserved.com/gallery/Halo-Intersceptor-One-Car-360A-Transportationa/727172">Halo Intersceptor - One Car - 360Â° Transportationâ„¢ on Industrial Design Served</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.industrialdesignserved.com/gallery/2010-TRANSPORTATION-DESIGN-ELPH/708772">2010 // TRANSPORTATION DESIGN // ELPH on Industrial Design Served</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.industrialdesignserved.com/gallery/Concept-X6/717862">Concept X6 on Industrial Design Served</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.industrialdesignserved.com/gallery/The-King-Bobber/697817">The King Bobber on Industrial Design Served</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://vimeo.com/22655744">Oil'd on Vimeo</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.behance.net/gallery/Lunokhod-watches-at-Baselworld-2011/1276949">Lunokhod watches at Baselworld 2011 on the Behance Network</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.charitywater.org/whywater/?utm_source=SilverpopMailing&utm_medium=email&utm_campaign=2011_april_jarvis_video_launch%20(3)&utm_content=">why water.</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://vimeo.com/22556758">Claudio Salas Reel on Vimeo</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.motionserved.com/gallery/ENCODER-SCH94FO/1076193">ENCODER SCH94FO on Motion Graphics Served</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.motionserved.com/gallery/Neositrin-Hedrin/1091973">Neositrin - Hedrin on Motion Graphics Served</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.motionserved.com/gallery/Ericsson-MWC/1077471">Ericsson MWC on Motion Graphics Served</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.motionserved.com/gallery/MINI-Rocketman/1087567">MINI Rocketman on Motion Graphics Served</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.youtube.com/watch?v=8TKgPcBKXgU&NR=1">YouTube - MINI Scooter E Concept</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://hefel.wordpress.com/2008/01/13/information-design-dashboards-and-balanced-scorecards/">Information design, dashboards, and balanced scorecards Â«</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.flickr.com/photos/kitcowan/730767138/">KITT | Flickr - Photo Sharing!</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://streetbonersandtvcarnage.com/blog/fuck-knight-rider/">STREET BONERS and TV CARNAGE Â» FUCK KNIGHT RIDER</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.celicasupra.com/forums/showthread.php?57055-Digital-dash-R-amp-D/page2">Digital dash R&amp;D</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.davidthedesigner.com/photos/uncategorized/2007/08/28/season1dash1995.png">season1dash1995.png (525Ã—317)</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.google.com/imgres?imgurl=http://webspace.webring.com/people/su/um_3033/tvpix/originalkittstagedash.jpg&imgrefurl=http://webspace.webring.com/people/su/um_3033/&usg=__QRHDlu4w5XmDOieUE99qGYCv7jo=&h=457&w=600&sz=38&hl=en&start=48&sig2=t8rT1eipYkgIRKDTo2yWPw&zoom=0&tbnid=XGhC9ob8yRhQeM:&tbnh=103&tbnw=135&ei=m1S5TbrAKY2o8APfwJxZ&prev=/search%3Fq%3Dknight%2Brider%2Bdashboard%26hl%3Den%26safe%3Doff%26biw%3D1280%26bih%3D705%26site%3Dsearch%26tbm%3Disch0%2C950&um=1&itbs=1&iact=hc&vpx=754&vpy=368&dur=275&hovh=103&hovw=135&tx=98&ty=73&page=3&ndsp=27&ved=1t:429,r:4,s:48&biw=1280&bih=705">Google Image Result for </a><a href="http://webspace.webring.com/people/su/um_3033/tvpix/originalkittstagedash.jpg">http://webspace.webring.com/people/su/um_3033/tvpix/originalkittstagedash.jpg</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.thec4dvault.com/?p=93">terraint pt 1</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.youtube.com/watch?v=pSWcW6_bAI4">terraint pt2</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.youtube.com/watch?v=3vyliL6WOA4&feature=related">terraint pt3</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.youtube.com/watch?v=S7cRgWvN0bk&feature=related">terraint pt4</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.youtube.com/watch?v=f6NyVbNsuaQ&feature=related">terraint pt5</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://vimeo.com/16638983">We All Want to Be Young on Vimeo</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.youtube.com/watch?v=Y9sCV3v4GcI">YouTube - King of California - Trailer</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.youtube.com/watch?v=fj_W2U5NYR0">YouTube - HIPNOS - Trailer EspaÃ±ol HD</a>
+</p>
+</li>
+<li>
+<p>
+<a href="https://manga.gamestotal.com/en/readx/Dragonball/10/42/1">Read Dragonball Manga Chapter 42 Page 1 | Read manga online for free</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.digitalurban.org/2010/01/camera-mapping-and-projection-new-york.html">camera mapping</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.blenderguru.com/how-to-make-a-realistic-asteroid/">Realistic Asteroid in Blender | Blender Materials | Blender Guru</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.3dfluff.com/cameramapping/cameramappingtut.htm">camera mapping tutorial</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://aeportal.blogspot.com/2010/05/camera-mapping-tutorial.html">an After Effects Portal: Camera mapping tutorial</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://citmonline.upc.edu/p52553276?launcher=false&fcsContent=true&pbMode=normal">pospo camera mapping c4d guasch</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://riotcinema.com/panorama/#/0">Panorama EstÃ©tico</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://en.wikipedia.org/wiki/List_of_dystopian_films">referencies post apocaliptic movies <strong>*</strong>*</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.good.is/post/washington-d-c-offers-12-000-to-people-who-move-near-work/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+good%2Flbvp+%28GOOD+Main+RSS+Feed%29">Washington, D.C. Offers $12,000 to People Who Move Near Work - Transportation - GOOD</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://gfxcool.net/tutorials/143999-create-the-ultimate-tron-scene-3d-world-tron-special.html">Create the ultimate Tron scene (3D World Tron Special) Â» Gfxcool - Free Graphic Sources Kingdom - Vector - 3D - Stock Photo - After Effect - Wallpaper - Photoshop</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.cinema4dtutorial.net/?p=243">build your own TRON light cycle Â« Cinema 4d Tutorial</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.youtube.com/watch?v=kRfwwNS6YHQ&NR=1&feature=fvwp">YouTube - 3D Projection</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.youtube.com/watch?v=BGI0ro5rXA8">YouTube - roche fanny camera mapping</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.digieffects.com/support/tutorial/camera_mapper_intro_san_francisco">Adobe After Effects, Apple Final Cut Pro, Adobe Premiere Pro and Grass Valley Edius Plug-ins</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://vimeo.com/5577330">Deathroad Bolivia, 3d camera mapping on Vimeo</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.youtube.com/watch?v=uWmA5HXXgEs&NR=1&feature=fvwp">YouTube - 3D scenery (desert) flythrough - Camera Projection</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://vimeo.com/8977962">Camera projection test.(GRAYWORLD) on Vimeo</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.maxoncomputer.com/tutorial_detail.asp?tutorialID=265">MAXON Computer Cinema 4D Tutorials: Camera Mapping</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://vimeo.com/889190?utm_source=feedburner&utm_medium=twitter&utm_campaign=Feed%3A+Vimeo%2FVideosBrandonBuckLikes+(Vimeo+%2F+Videos+Brandon+Buck+likes)">"In Dire Need" - Camera Mapping Breakdown on Vimeo</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.youtube.com/watch?v=4fu7EcJFuOo">YouTube - VFX Breakdown - Camera Mapping Mountains</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.youtube.com/watch?v=ck-2nalCYiQ&feature=related">YouTube - Cinema 4d Tutorial-Camera Mapping</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.youtube.com/watch?v=uGYqZZwzp18&NR=1&feature=fvwp">YouTube - How to paint Mountain Water and Cloud Digital painting tutorial environmental concept sketch</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.google.es/search?q=cray-2&um=1&ie=UTF-8&tbm=isch&source=og&sa=N&hl=en&tab=wi&biw=1280&bih=679">cray-2 - Google Search</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://vrayc4d.com/tutorials/61-making-of-mexico-by-rink.html">Making of Mexico by RINK Â» VrayC4D</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://vrayc4d.com/manuals/vrayc4d-tutorials/indoor-illumination-inthecity">Indoor Illumination by InTheCity | VrayC4D - Manuals</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.youtube.com/watch?v=7s1TsYHZ_4k">YouTube - Cinema 4D - The Road (1 of 5)</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.youtube.com/watch?v=3vyliL6WOA4">YouTube - Cinema 4D - The Road (3 of 5)</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.youtube.com/watch?v=S7cRgWvN0bk">YouTube - Cinema 4D - The Road (4 of 5)</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.thec4dvault.com/?p=123">The C4D Vault Â» Blog Archive Â» Mograph/Instanced trees</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.youtube.com/watch?v=DfkcTp4v3b8&feature=player_embedded">YouTube - Mograph tree placement</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.texturemaat.co.uk/index.php?option=com_content&view=article&id=61&Itemid=62">TEXTURE MAAT</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://vimeo.com/7809605">render futurisme hiperealisme 3d max</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.thirdseventh.com/index.php?/thirdseven/man-made/">Man Made VS Nature : the third &amp; the seventh</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://translate.googleusercontent.com/translate_c?anno=2&hl=en&rurl=translate.google.co.in&sl=es&tl=en&u=http://rendering.ru/&usg=ALkJrhh7pjhVwO7-UPVbC48yn6q8M9UqmA">iCube R&amp;D group | advanced tools for 3d visualization</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://translate.google.co.in/translate?hl=en&sl=es&tl=en&u=http%3A%2F%2Fwww.entremaqueros.com%2Fbitacoras%2Fdimension%2F%3Fp%3D8386&anno=2">Google Translate</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://vrayc4d.com/manuals/vrayforc4d-manual/vraydirt">VrayDirt | VrayC4D - Manuals</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.afterworks.com/FumeFX/Overview.asp?ID=1">Afterworks - Sitni Sati</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://rendering.ru/ru_en/">iCube R&amp;D group | advanced tools for 3d visualization</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.entremaqueros.com/bitacoras/dimension/alex-roman-y-su-cortometraje-the-third-the-seventh-en-dimension-2-5/">Alex Roman y â€œThe Third &amp; The Seventhâ€, * * * * * *</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://archive-design.ru/page.htm?id=32">vray materials</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://vrayc4d.com/manuals/vrayforc4d-manual/material-layers">materials layers explicacio vray</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://translate.googleusercontent.com/translate_c?hl=en&ie=UTF8&prev=_t&rurl=translate.google.co.in&sl=es&tl=en&u=http://www.lighthub.com/html/company.htm&usg=ALkJrhiIhkaou-LQL8Q-A7QjEnzOFXeF0g">HM</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://translate.googleusercontent.com/translate_c?anno=2&hl=en&rurl=translate.google.co.in&sl=es&tl=en&u=http://www.onyxtree.com/&usg=ALkJrhj2d5jpQKs4T3hYm-KC98fjyPM0SA">Welcome to Onyx Computing! Unique procedural creators of 3D broadleaf and conifer trees, palms, grasses and flowers, and bamboo vegetation!</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://rendering.ru/ru_en/plugins/vrayscatter.html">VRayScatter plugin x crar objects polygons each</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://vimeo.com/8200251">Compositing Breakdown (T&amp;S) on Vimeo</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.vimeo.com/8217700">Exeter Shot — Making Of on Vimeo</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.vrayforc4d.com/materials/">VRAYforC4D Materials |</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://vrayc4d.com/manuals/booktree">VRAYforC4D Manual | VrayC4D - Manuals</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://vrayc4d.com/manuals/files/Scenes">Scenes | VrayC4D - Manuals</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://renderfeed.com/">Renderfeed</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://vrayc4d.com/manuals/vrayc4d-tutorials/dof-tutorial-strat">DOF Tutorial (depth of field)</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://think.maxwellrender.com/tutoriales/masArchivos/DOFCueTool_111_306979.swf">DOF flash mostra <strong>*</strong>*</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://vrayc4d.com/manual/vraytags_compositing.htm">Vray Compositing Tag</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://vrayc4d.com/manual/render_settings_multipass.htm">MultiPass</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://forums.creativecow.net/thread/2/933963">Alpha channel mask (easy one this!) : Adobe After Effects</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.youtube.com/watch?v=aVD8CqvDOO0">YouTube - pixeltrain.de - VRAY fÃ¼r Cinema 4D - 03 VRAYforC4D Physical Camera</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.youtube.com/watch?v=-MkBWTrkypg&feature=related">YouTube - Golf animado con cinema4d + vray + plugin drive</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.youtube.com/watch?v=qTBaSSKdD9M">YouTube - Dof-Vray</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.youtube.com/watch?v=q9BTJHhw_yg">YouTube - DoF - 5SP Primitives</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.youtube.com/watch?v=YI1jRlIbT0s">YouTube - KREISEL DOF VRAY C4D</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://forum.vrayforc4d.com/">VRAYforC4D Offical Support Forum - Powered by vBulletin</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://greyscalegorilla.com/blog/">greyscalegorilla.com/blog</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.youtube.com/watch?v=W8PunV_lhK8">DOF IN AFTER EFFECTS</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://cinema4dplugs.com/2010/03/30/steadycam-pro/">SteadyCam Pro | CINEMA 4D Plugs</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.blackstar-solutions.de/index.php?id=33">C4D DoF: Cinema 4D plug-ins</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.biomekk.com/index.php?page=1&cat=107&itm=26">zblur home <strong>*</strong></a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.planetside.co.uk/terragen/resources.shtml">Terragenâ„¢</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://vrayc4d.com/manuals/files/scenes/test-scenes/real-dof-quick-test-412">Real DOF Quick Test | VrayC4D - Manuals</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://vrayc4d.com/manuals/vrayc4d-tutorials/physical-camera-quick-guide-strat">Physical Camera Quick Guide by STRAT | VrayC4D - Manuals</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.vrayforc4d.com/portal/materials/">Materials | www.vrayforc4d.com</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.vrayforc4d.com/portal/blog">Blogs | www.vrayforc4d.com</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://vrayc4d.com/manuals/vrayforc4d-manual/antialiasing">Antialiasing | VrayC4D - Manuals</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://exorbit-art.de/wp-content/gallery/quick-stuffs/piano-2-3d-benjamin-springer-c4d-vray.jpg">piano-2-3d-benjamin-springer-c4d-vray.jpg (2000Ã—1125)</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://exorbit-art.de/downloads/">Downloads | exorbit art</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.cracktwo.com/2011/04/25-abandoned-soviet-monuments-that-look.html">* * * * * Yugoslavia Monuments that look like they're from the Future | Crack Two</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://vrayc4d.com/manuals/vrayforc4d-manual/material-matte">Material Matte | VrayC4D - Manuals</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://vrayc4d.com/manuals/vrayforc4d-manual/luminosity-layer">VrayC4D - vraydirt manual</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://vimeo.com/21733461">The Hunan Faerie of Osaka Garden on Vimeo</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.chaosgroup.com/en/2/envyspot.html&MMM?i=12">Customer Success Story :: Silestone and The Third and The Seventh projects</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://mvpny.com/R11GITutorial/R11GITutorial_Part1.html">Cinema 4D R11 AR3 GI Tutorial by Michael Vance Part 1 of 3</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://mvpny.com/R11GITutorial/R11GITutorial_Part2.html">Cinema 4D R11 AR3 GI Tutorial by Michael Vance Part 2 of 3</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://mvpny.com/R11GITutorial/R11GITutorial_Part3.html">Cinema 4D R11 AR3 GI Tutorial by Michael Vance Part 3 of 3</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.c4d-jack.de/html/downloads/surfacespread/showcase/Quinta_Kizo_04.jpg">Quinta_Kizo_04.jpg (1400Ã—593)</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.c4d-jack.de/html/downloads/surfacespread/showcase/Quinta_Kizo_01.jpg">Quinta_Kizo_01.jpg (1400Ã—662)</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://vis-soft.net/e-books/180438-evermotion-the-archviz-training-dvd.html">Evermotion The Archviz Training DVD Â» Download software free &lt;&gt; Vis-Soft.NET</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.wupload.com/folder/15826">Wupload, ultimate file hosting.</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://exorbit-art.de/2011/05/real-ground-plants-v1-vrayforc4d/">Real Ground Plants V1 | VrayForC4D | exorbit art</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.edouardsalier.fr/blog/wp-content/uploads/2011/05/20110519-072508.jpg">20110519-072508.jpg (857Ã—640)</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.youtube.com/watch?v=hp9qOaDZrog&feature=related">YouTube - 3D matte painting</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.filestube.com/eccf894afd663ae803e9,g/Renaissance-2006-1080p-HD-DVD-DTS-x264-rar.html">Renaissance 2006 1080p HD DVD DTS x264 rar - Free Download from rapidshare - Filestube.com</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://en.wikipedia.org/wiki/Brutalist_architecture">Brutalist architecture - Wikipedia, the free encyclopedia</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://architecture.about.com/od/20thcenturytrends/ig/Modern-Architecture/Brutalism.htm">Brutalism - Beton Brute - Brutalism in Architecture - Picture Dictionary of Modern Architecture</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.archdaily.com/70676/brutalism-in-the-uk/">Brutalism in the UK | ArchDaily</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.open2.net/modernity/4_15.htm">From Here To Modernity Architects - Brutalism</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://deliciousghost.com/wp-content/uploads/2008/01/220a.jpg">220a.jpg (552Ã—374)</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://4.bp.blogspot.com/_cNMGcUju8JI/Sfz3Gx5CN8I/AAAAAAAAE60/yFbW5Yc1cMY/s1600-h/brutalism.jpg">brutalism.jpg (image)</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.travelblog.org/Photos/1229685">It's good to see New Brutalism has made it here | Photo</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://blogs.birminghampost.net/lifestyle/2009/03/03/lib1.jpg">lib1.jpg (2268Ã—2338)</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.theparisblog.com/wp-content/uploads/2009/07/brutalism.jpg">brutalism.jpg (225Ã—300)</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.archboston.org/community/showthread.php?t=3067">Ode to Brutalism - archBOSTON.org</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://en.wikipedia.org/wiki/Battersea_Power_Station">Battersea Power Station - Wikipedia, the free encyclopedia</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://en.wikipedia.org/wiki/Art_Deco">Art Deco - Wikipedia, the free encyclopedia</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://structurehub.com/blog/wp-content/uploads/2009/09/washington-dc-metro-station-from-nicksherman-on-flickr-433x578.jpg">washington-dc-metro-station-from-nicksherman-on-flickr-433x578.jpg (433Ã—578)</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.kmtspace.com/futurist-arch.htm">Futurist Arch: sant'elia</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://es.wikipedia.org/wiki/Banco_de_Londres_y_Am%C3%A9rica_del_Sur_(Casa_Matriz)">Banco de Londres y AmÃ©rica del Sur (Casa Matriz) - Wikipedia, la enciclopedia libre</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://es.wikipedia.org/wiki/Archivo:Banco_de_Londres_(escalera,_1966).jpg">Archivo:Banco de Londres (escalera, 1966).jpg - Wikipedia, la enciclopedia libre</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://es.wikipedia.org/wiki/Archivo:Banco_de_Londres_(terraza,_1966).jpg">Archivo:Banco de Londres (terraza, 1966).jpg - Wikipedia, la enciclopedia libre</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://es.wikipedia.org/wiki/Archivo:Biblioteca_nacional_detalle.jpg">Archivo:Biblioteca nacional detalle.jpg - Wikipedia, la enciclopedia libre</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://es.wikipedia.org/wiki/Biblioteca_Nacional_de_la_Rep%C3%BAblica_Argentina">Biblioteca Nacional de la RepÃºblica Argentina - Wikipedia, la enciclopedia libre</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://es.wikipedia.org/wiki/Archivo:Biblioteca_Nacional_de_la_Argentina_(maqueta).jpg">Archivo:Biblioteca Nacional de la Argentina (maqueta).jpg - Wikipedia, la enciclopedia libre</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://es.wikipedia.org/wiki/Archivo:Biblioteca_Nacional_Argentina_en_construcci%C3%B3n_(1982).JPG">Archivo:Biblioteca Nacional Argentina en construcciÃ³n (1982).JPG - Wikipedia, la enciclopedia libre</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://en.wikipedia.org/wiki/File:Phillips_Exeter_Academy_library_atrium_cross_beams_closeup.jpg">File:Phillips Exeter Academy library atrium cross beams closeup.jpg - Wikipedia, the free encyclopedia</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://upload.wikimedia.org/wikipedia/commons/a/ad/Phillips_Exeter_Library%2C_New_Hampshire_-%3Cem%3ELouis_I._Kahn%3C/em%3E%281972%29d.jpg">upload.wikimedia.org/wikipedia/commons/a/ad/Phillips_Exeter_Library%2C_New_Hampshire_-<em>Louis_I._Kahn</em>%281972%29d.jpg</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.ronenbekerman.com/making-of-winter-snow-mountain-retreat/">Making of Mountain Retreat - Ronen Bekerman 3d architectural visualization blog</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.supermanhomepage.com/images/superman-returns7/daily-planet-stairs-tb.html">Picture</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://en.wikipedia.org/wiki/Salk_Institute">Salk Institute for Biological Studies - Wikipedia, the free encyclopedia</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://vimeo.com/24927298">Tron: Destiny on Vimeo</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.cracked.com/article_18664_5-annoying-trends-that-make-every-movie-look-same_p2.html">5 Annoying Trends That Make Every Movie Look the Same | Cracked.com</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.cracked.com/article_18664_5-annoying-trends-that-make-every-movie-look-same.html">5 Annoying Trends That Make Every Movie Look the Same | Cracked.com</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://en.wikipedia.org/wiki/LCARS">LCARS - Wikipedia, the free encyclopedia</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://renderpimp.blogspot.com/2010/03/area-light-and-gi-tutorial-vid.html">interior render c4d materials</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.videocopilot.net/blog/2011/05/set-extensions-in-3d-space/">VIDEO COPILOT | Professional After Effects Tutorials, Plug-ins &amp; Pre-Keyed Stock Footage</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.photographyserved.com/gallery/Huangshan-Ltd/1417007">Huangshan Ltd on Photography Served skyline!!! <strong>*</strong></a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.taringa.net/posts/downloads/11266543/GSG-Texture-Kit-%3Cem%3EGreyscalegorilla-Texture-Kit%3C/em%3E.html">GSG Texture Kit (Greyscalegorilla Texture Kit) - Taringa!</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.taringa.net/posts/downloads/9283884/Cinema4D---CityKit----greyscalegorilla.html">Cinema4D - CityKit — greyscalegorilla - Taringa!</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.taringa.net/posts/downloads/8363777/HDRI-Studio-Pack---C4D---greyscalegorilla.html">HDRI Studio Pack - C4D - greyscalegorilla - Taringa!</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.c4dportal.com/forum/">c4dportal - Powered by vBulletin</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://cg.tutsplus.com/category/tutorials/maxon-cinema-4d/">Cinema4D | Cgtuts+</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.c4des.com/"><em>_ C4Des </em>_ comunidad de usuarios de Cinema4D en espaÃ±ol <em>_</em> CINEMA 4D, BODYPAINT 3D</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://forums.cgsociety.org/">CG society</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://cg.tutsplus.com/tutorials/maxon-cinema-4d/3d_cg_vfx_maxon_cinema4d_c4d_xpresso_dynamic_building_setup_day_3/">Create a Dynamic Building Asset Using Cinema 4Dâ€™s Xpresso â€“ Day 3</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://greyscalegorilla.com/hdristudio/">GreyscaleGorilla.com - HDRI Studio Pack</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.youtube.com/watch?v=MUBXzc5t7rk">HDRI Studio Pack Preview - YouTube</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://monkeyzen.com/2011/08/la-casa-del-futuro-o-lo-que-entendian-por-futuro-en-1968">La casa del futuro (o lo que entendÃ­an por futuro en 1968) â€” Monkeyzen</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.e-onsoftware.com/products/vue/vue_9_studio/">e-on software - Vue 9 Studio</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.youtube.com/watch?v=bvN2NPIFEvM&NR=1">xStream 9 Customer Showreel (HD) - YouTube</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://greyscalegorilla.com/citykit/">GreyscaleGorilla.com - City Kit for Cinema 4D</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.shapeways.com/">Shapeways | Passionate about creating</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.e-onsoftware.com/support/tutorials/?page=1&cf=%2Fsupport%2Ftutorials%2F">e-on software - Demos &amp; Tutorials</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.thefoundry.co.uk/products/nukex/">NUKEX | Greater Creative Freedom | The Foundry</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.youtube.com/watch?v=7Ml_mkfe0VE&feature=player_embedded">Plexus Full Tutorial - YouTube</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://vimeo.com/23615622">NOEMA - the thought process. on Vimeo</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://aftereffects.forgingfire.com/2009/07/22/after-effects-tutorials-tilt-shift/">desenfoque footage| Free After Effects Tutorials | Forging Fire Studio</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.forum.vrayforc4d.com/showthread.php?t=10246">Opinions…? - VRAYforC4D Offical Support Forum</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.imdb.com/name/nm0027572/">Wes Anderson - IMDb director de fotografia</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.3dluvr.com/carles/Tut02en.htm">images2000</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://greyscalegorilla.com/blog/2011/10/gsg-flame-free-candle-simulator-for-cinema-4d/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+GSG+%28Greyscalegorilla%29">GSG Flame: Free Candle Simulator for Cinema 4D | greyscalegorilla/blog</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://vimeo.com/33039981">My Lighting Challenge Render: Lighting and Texturing an iPhone 4S on Vimeo</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://vimeo.com/32052115">How to Add Caustics In Cinema 4D on Vimeo</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://vimeo.com/33421743">Cinema 4D to After Effects: Plasma TV Tutorial on Vimeo</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.tutorialguide.net/creating_a_car_tyre_tutorial.html">Creating A Car Tyre Tutorial - Best Cinema 4D Tutorials On Tutorial Guide</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.youthedesigner.com/">Graphic Design Inspiration, Tutorials, Resources, Freebies and More! - YouTheDesigner.com</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.green.autoblog.com/2009/01/24/i-popular-mechanics-i-tries-out-honda-dn01-records-44-mpg/">Popular Mechanics tries out Honda DN01, records 44 mpg</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.green.autoblog.com/photos/honda-dn-01-2/#photo-1314304/">Honda DN-01 Photo Gallery - AutoblogGreen</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.google.es/imgres?q=honda+automatic+transmission+motorcycle&um=1&hl=en&safe=off&sa=X&authuser=0&biw=1920&bih=959&tbm=isch&tbnid=gRM0900Twy062M:&imgrefurl=http://motorcycleinfo.org/2008/11/automatic-motorcycles/&docid=n2XEnRGk_6G0_M&imgurl=http://motorcycleinfo.org/wp-content/uploads/2008/11/honda-automatic-dn-01.jpg&w=720&h=400&ei=JSEMT_mmLcSJhQeMo8C5BA&zoom=1">Google Image Result for </a><a href="http://motorcycleinfo.org/wp-content/uploads/2008/11/honda-automatic-dn-01.jpg">http://motorcycleinfo.org/wp-content/uploads/2008/11/honda-automatic-dn-01.jpg</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://manutegol.blogspot.com/2011/10/moto-capsule-corp.html">InfoD3D: Moto Capsule Corp.</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://stnyusu.com/wp-content/uploads/2011/07/akira4-500x705.jpg">akira4-500x705.jpg (500Ã—705)</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://es.wikipedia.org/wiki/Archivo:Akira_moto.jpg">Archivo:Akira moto.jpg - Wikipedia, la enciclopedia libre</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.fanboy.com/2007/06/the-motorcycle-from-akira.html">The Motorcycle from Akira Â» Fanboy.com</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://yamaha.mforos.com/236461/2001307-alguien-ha-visto-akira/">Foro Yamaha: Zona R - Alguien ha visto Akira??? - Foro comÃºn - Otros temas</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://cargocollective.com/yratof/#982645/candy-Skulls">yratof</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://greyscalegorilla.com/blog/2011/08/whats-new-in-cinema-4d-13/">Whatâ€™s New In Cinema 4D 13 - Greyscalegorilla</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://greyscalegorilla.com/blog/2011/09/fisheye-camera-in-cinema-4d/">Fisheye Camera For Cinema 4D - Greyscalegorilla</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://greyscalegorilla.com/blog/2011/05/how-to-make-and-modern-art-gallery-installation-animation-with-cinema-4d/">How To Make A Modern Art Gallery Installation Animation With Cinema 4D - Greyscalegorilla</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.trendsnow.net/2011/04/clouds.html/clouds-02">Clouds clouds-02 â€“ TrendsNow</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://vimeo.com/4765632">T&amp;S Teaser2 on Vimeo</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.fxguide.com/featured/digital-storytelling-the-girl-with-the-dragon-tattoo/">Digital storytelling: The Girl with the Dragon Tattoo | fxguide</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.motionworks.com.au/">After Effects and Cinema 4D Training</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.kerkythea.net/phpBB2/viewtopic.php?p=38709">Kerkythea Rendering System :: View topic - 2008- Faster Render Previews + Converting spot to IES lights</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://cg.tutsplus.com/tutorials/maxon-cinema-4d/lighting-and-shadows-in-cinema-4d-a-thorough-overview/">Lighting and Shadows in Cinema 4D â€“ a Thorough Overview</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://rozairo.deviantart.com/art/IES-lights-for-3D-150824982">IES lights - for 3D by ~Rozairo on deviantART</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://d24w6bsrhbeh9d.cloudfront.net/photo/2155656_460s.jpg">2155656_460s.jpg (460Ã—9824)</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://greyscalegorilla.com/blog/2011/12/how-to-make-an-animated-title-sequence-in-cinema-4d-and-after-effects/">How to Make An Animated Title Sequence in Cinema 4D and After Effects - Greyscalegorilla</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.c4dtextures.com/modules/rmdp/">C4D Textures - Textures</a>
+</p>
+</li>
+<li>
+<p>
+<a href="https://app.gantter.com/">Gantter.com - web-based project management alternative</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://dribbble.com/shots/54225-GeekTyrant-V4-Honeycomb-Background-texture#">Dribbble - GeekTyrant V4 Honeycomb Background texture by Free Reyes</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://cg.tutsplus.com/tutorials/maxon-cinema-4d/an-introduction-to-xpresso-in-cinema-4d/">Cinema 4D: An Introduction to Xpresso</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://dribbble.com/shots/351853-Authentication-Failed?list=tags&tag=login">Dribbble - Authentication Failed by Michael Kvakin</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.littlefriendsphoto.com/index2.php#/gallery1/1/">Little Friends Lifestyle Pet Photography by Seth Casteel - Los Angeles Pet Photography, Chicago Pet Photography, Los Angeles Dog Photography, Chicago Dog Photography, Underwater Dog Photography</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://forum.vrayforc4d.com/showthread.php?t=11199">Free speaker model for all - VRAYforC4D Offical Support Forum</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.industrialdesignserved.com/gallery/Honda-Chopper/1491285">Honda Chopper on Industrial Design Served</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.industrialdesignserved.com/gallery/Samurai1000/877158">Samurai1000 on Industrial Design Served</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.industrialdesignserved.com/gallery/A-Closer-Look-Jason-Battersby-Design/1479631">A Closer Look: Jason Battersby Design on Industrial Design Served</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.industrialdesignserved.com/gallery/Fiat-Multipla-Vorto-(Redesign)/1933327">Fiat Multipla ''Vorto'' (Redesign) on Industrial Design Served</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.behance.net/gallery/Honda-Chopper/1491285">Honda Chopper on the Behance Network</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.behance.net/gallery/Citroen-Taranis-concept/2097248">Citroen Taranis concept on the Behance Network</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://humandescent.deviantart.com/gallery/">HumanDescent's deviantART Gallery</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://dribbble.com/shots/440167-SpeedTest/attachments/26840">Dribbble - big.png by Sencer Bugrahan</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.methods.co.nz/asciidoc/asciidoc.pdf">www.methods.co.nz/asciidoc/asciidoc.pdf</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.jotdown.es/2012/02/olvida-la-pelicula-mira-los-creditos-100-titulos-de-credito-que-merecen-un-vistazo-i/">Jot Down Cultural Magazine | Olvida la pelÃ­cula: 100 tÃ­tulos de crÃ©dito que merecen un vistazo (I)</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://psd.tutsplus.com/tutorials/tutorials-effects/quick-tip-create-your-own-leather-texture-using-filters/">Quick Tip: Create Your Own Leather Texture Using Filters | Psdtuts+</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://dribbble.com/shots/434796-Speedometer?list=debuts">Dribbble - Speedometer by Maksim Petrushin</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.c4davenue.net/Carbon%20en/Carbon%20en.html">Created by Camtasia Studio 4</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://greyscalegorilla.com/blog/2011/12/my-lighting-challenge-render-lighting-and-texturing-an-iphone-4s/">My Lighting Challenge Render: Lighting and Texturing an iPhone 4S - Greyscalegorilla</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://dogday-design.se/?p=716">iPhone 4 fÃ¶r nerladdning | Dogday design | All 3D du behÃ¶ver!</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://2.bp.blogspot.com/-MwIlpDCqbX0/TmIjim9nYjI/AAAAAAAAACo/PDIpIiFqzEM/s1600/camera-lens-icon.jpg">camera-lens-icon.jpg (1280Ã—1024)</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://dribbble.com/shots/422529-Synth/attachments/24844">Dribbble - synth_05.jpg by Mikael Eidenberg</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://dribbble.com/shots/444898-Vintage-Car-Stereo">Dribbble - Vintage Car Stereo by Lisi Schappi</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://dribbble.com/shots/299764-Tire">Dribbble - Tire by Anton Egorov</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.c4dcafe.com/ipb/topic/49505-simulating-led-light-through-acrylicoptical-fibre/">Simulating LED light through Acrylic/Optical Fibre - C4D Cafe</a>
+</p>
+</li>
+<li>
+<p>
+<a href="https://vimeo.com/16638983">We All Want to Be Young on Vimeo</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://wiki.c4d-jack.de/w/images/e/e5/AA_Vergleichstafel_en.gif">AA_Vergleichstafel_en.gif (640Ã—1440)</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://wiki.c4d-jack.de/wiki/Hauptseite">CINEMA 4D Wiki</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://wiki.c4d-jack.de/wiki/En:Antialiasing">En:Antialiasing â€“ CINEMA 4D Wiki</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://speakerdeck.com/c/programming">Programming // Speaker Deck</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.taringa.net/posts/downloads/1034721/VideoCopilot---Real-Clouds-PAL.html">VideoCopilot - Real Clouds PAL - Taringa!</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.yankodesign.com/2012/03/27/robots-drones-nukes-oh-my/">Military Concept Art by Alp Germaner Â» Yanko Design</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://humanscribbles.blogspot.com.es/2010/12/spomenik-propaganda-or-pure-beauty.html">Human's Scribbles: Spomenik: propaganda or pure beauty?</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://3.bp.blogspot.com/_apFpwnMI2hs/TP2pDPeGeII/AAAAAAAADdo/pm-p_m0cu_E/s1600/Spomenik_16.jpg">Spomenik_16.jpg (1122Ã—886)</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://es.wikipedia.org/wiki/Cinema_4D">Cinema 4D - Wikipedia, la enciclopedia libre</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.websyters.com/forum/9-3dmaxmayacinema4d/169-ambient-occlusion-in-cinema-4d">Ambient Occlusion in Cinema 4d…….. - WebSyters -Forum</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://cinema4d-gi.blogspot.com.es/">Understanding Cinema 4D's Global Illumination</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.industrialdesignserved.com/gallery/Step-Urban-Quad/2128370">Step Â· Urban Quad on Industrial Design Served</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.industrialdesignserved.com/gallery/Racing-Buggy/2476553">Racing Buggy on Industrial Design Served</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.industrialdesignserved.com/gallery/Concept-VW/1170527">Concept VW on Industrial Design Served</a>
+</p>
+</li>
+<li>
+<p>
+<a href="http://www.industrialdesignserved.com/gallery/H2Cell/1117165">H2Cell on Industrial Design Served</a>
+</p>
+</li>
+</ul></div>
+</div>
+</div>
+</div>
+
+<div id="footer">
+<div id="footer-text">
+Last updated 2012-04-16 16:35:15 CEST
+</div>
+</div>
+
+
+</body></html>
