@@ -423,7 +423,7 @@ h6 {
 }
 ul, ol {
   padding: 0;
-  /* margin: 0 0 9px 25px; */
+  margin: 0 0 9px 25px;
 }
 ul ul,
 ul ol,
@@ -2491,7 +2491,7 @@ button.btn.small, input[type="submit"].btn.small {
   outline: 0;
 }
 .navbar-fixed-top {
-  /* position: fixed; */
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
@@ -3838,7 +3838,7 @@ a.thumbnail:hover {
     padding-top: 0;
   }
   .navbar-fixed-top {
-    position: static;
+    position: fixed;
     margin-bottom: 18px;
   }
   .navbar-fixed-top .navbar-inner {
