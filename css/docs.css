@@ -40,7 +40,13 @@ body {
            /* Space out sub-sections more
             * -------------------------------------------------- */
 section {
-  padding-top: 60px;
+  padding-top: 65px;
+}
+.thumbnails section {
+  overflow: hidden
+}
+.thumbnails li {
+  float: none;
 }
 
 /* Faded out hr */
